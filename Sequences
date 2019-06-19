@@ -1,0 +1,94 @@
+Para usar un sequence en un insert se debe especifircar de la forma nextval('nombre_de_la_secuencia'), esto se debe poner en donde va
+la casilla id
+Por ejemplo: insert into molde(id,tipo) values (nextval('seq_molde'),'Jarra');
+
+//Aqui empiezan los create de secuencias//
+create sequence seq_molde
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_coleccion
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_diseno
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_pieza
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_vajilla
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_cliente
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_contrato
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_pedido
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_factura
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_detalle
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_organigrama
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_empleado
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_detallexp
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_salud
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
+
+create sequence seq_reunion
+    start with 1
+    increment by 1
+    minvalue 1
+    maxvalue 30;
