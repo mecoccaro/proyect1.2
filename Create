@@ -1,6 +1,7 @@
 CREATE table molde(
     id numeric(2) primary key ,
     tipo varchar(15) not null ,
+    forma varchar(20),
     tipoPlato varchar(15) ,
     tamaño numeric,
     volumen numeric(2,1),
