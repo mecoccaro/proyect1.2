@@ -48,16 +48,19 @@ INSERT INTO pieza(id,id_coleccion,id_molde) values(2,1,3);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(3,1,8);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(4,1,9);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(5,1,10);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(6,2,6);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(7,2,7);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(8,2,21);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(9,2,22);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(10,2,19);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(11,3,23);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(12,3,24);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(13,3,16);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(14,3,17);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(15,3,13);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(16,4,23);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(17,4,24);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(18,4,16);
@@ -69,21 +72,25 @@ INSERT INTO pieza(id,id_coleccion,id_molde) values(22,5,24);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(23,5,16);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(24,5,17);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(25,5,13);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(26,6,3);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(27,6,1);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(28,6,7);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(29,6,5);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(30,6,10);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(31,7,17);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(32,7,18);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(33,7,20);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(34,7,2);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(35,7,14);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(36,8,1);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(37,8,2);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(38,8,3);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(39,8,4);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(40,8,4);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(41,9,24);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(42,9,20);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(43,9,17);
@@ -95,27 +102,31 @@ INSERT INTO pieza(id,id_coleccion,id_molde) values(47,10,21);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(48,10,22);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(49,10,23);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(50,10,26);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(51,11,20);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(52,11,21);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(53,11,22);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(54,11,23);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(55,11,26);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(56,12,20);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(57,12,21);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(58,12,22);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(59,12,23);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(60,12,26);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(61,13,16);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(62,13,12);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(63,13,20);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(64,13,21);
-
 INSERT INTO pieza(id,id_coleccion,id_molde) values(65,13,22);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(66,14,8);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(67,14,9);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(68,14,1);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(69,14,4);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(70,14,6);
+
 INSERT INTO pieza(id,id_coleccion,id_molde) values(71,15,2);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(72,15,3);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(73,15,14);
@@ -161,34 +172,34 @@ INSERT INTO v_p values(1,74,10);
 INSERT INTO v_p values(1,75,10);
 
 INSERT INTO historial_precio values('4-Mar-18','1-Jul-18',12000,1);
-INSERT INTO historial_precio values('1-Jul-18','1-Oct-18',44000,1);
-INSERT INTO historial_precio values('1-Oct-18','6-Jan-19',67000,1);
+INSERT INTO historial_precio values('1-Jul-18','1-Sep-18',44000,1);
+INSERT INTO historial_precio values('1-Sep-18','6-Jan-19',67000,1);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Jan-19',83000,1);
-INSERT INTO historial_precio values('7-Jul-18','4-Oct-18',23000,2);
-INSERT INTO historial_precio values('4-Oct-18','10-Jan-19',62400,2);
+INSERT INTO historial_precio values('7-Sep-18','4-Nov-18',23000,2);
+INSERT INTO historial_precio values('4-Nov-18','10-Jan-19',62400,2);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',66700,2);
-INSERT INTO historial_precio values('2-Jul-18','13-Oct-18',14000,3);
+INSERT INTO historial_precio values('2-Aug-18','13-Oct-18',14000,3);
 INSERT INTO historial_precio values('13-Oct-18','12-Jan-19',32200,3);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('12-Jan-19',56200,3);
-INSERT INTO historial_precio values('3-Jul-18','1-Oct-18',13000,4);
+INSERT INTO historial_precio values('3-Aug-18','1-Oct-18',13000,4);
 INSERT INTO historial_precio values('1-Oct-18','4-Jan-19',22400,4);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('4-Jan-19',46700,4);
-INSERT INTO historial_precio values('20-Jul-18','4-Oct-18',34000,5);
-INSERT INTO historial_precio values('4-Oct-18','14-Jan-19',72400,5);
+INSERT INTO historial_precio values('20-Sep-18','4-Nov-18',34000,5);
+INSERT INTO historial_precio values('4-Nov-18','14-Jan-19',72400,5);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('14-Jan-19',86700,5);
-INSERT INTO historial_precio values('24-Jul-18','1-Oct-18',11000,6);
-INSERT INTO historial_precio values('1-Oct-18','4-Jan-19',22400,6);
+INSERT INTO historial_precio values('24-Sep-18','1-Nov-18',11000,6);
+INSERT INTO historial_precio values('1-Nov-18','4-Jan-19',22400,6);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('4-Jan-19',35700,6);
-INSERT INTO historial_precio values('7-Jul-18','2-Oct-18',3000,7);
-INSERT INTO historial_precio values('2-Oct-18','6-Jan-19',10000,7);
+INSERT INTO historial_precio values('7-Sep-18','2-Nov-18',3000,7);
+INSERT INTO historial_precio values('2-Nov-18','6-Jan-19',10000,7);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Jan-19',16700,7);
-INSERT INTO historial_precio values('3-Jun-18','4-Nov-18',22000,8);
+INSERT INTO historial_precio values('3-Sep-18','4-Nov-18',22000,8);
 INSERT INTO historial_precio values('4-Nov-18','9-Jan-19',32400,8);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('9-Jan-19',36750,8);
-INSERT INTO historial_precio values('7-Jul-18','4-Oct-18',3200,9);
-INSERT INTO historial_precio values('4-Oct-18','10-Jan-19',6400,9);
+INSERT INTO historial_precio values('7-Sep-18','4-Nov-18',3200,9);
+INSERT INTO historial_precio values('4-Nov-18','10-Jan-19',6400,9);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',10700,9);
-INSERT INTO historial_precio values('3-Jul-18','16-Oct-18',33000,10);
+INSERT INTO historial_precio values('3-Aug-18','16-Oct-18',33000,10);
 INSERT INTO historial_precio values('16-Oct-18','7-Jan-19',55400,10);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Jan-19',69100,10);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',24500,11);
@@ -246,35 +257,35 @@ INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('27-May-19',6
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('27-May-19',49700,63);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('28-May-19',47000,64);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('28-May-19',52300,65);
-INSERT INTO historial_precio values('6-Jun-18','4-Nov-18',3000,66);
+INSERT INTO historial_precio values('6-Sep-18','4-Nov-18',3000,66);
 INSERT INTO historial_precio values('4-Nov-18','3-Jan-19',15400,66);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',39200,66);
-INSERT INTO historial_precio values('3-Sep-18','18-Dec-18',7250,67);
-INSERT INTO historial_precio values('18-Dec-18','7-Mar-19',12400,67);
+INSERT INTO historial_precio values('3-Nov-18','18-Jan-19',7250,67);
+INSERT INTO historial_precio values('18-Jan-19','7-Mar-19',12400,67);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',41500,67);
-INSERT INTO historial_precio values('1-Jun-18','14-Nov-18',7500,68);
+INSERT INTO historial_precio values('1-Sep-18','14-Nov-18',7500,68);
 INSERT INTO historial_precio values('14-Nov-18','10-Jan-19',15400,68);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',37500,68);
-INSERT INTO historial_precio values('13-Jul-18','12-Oct-18',15000,69);
-INSERT INTO historial_precio values('12-Oct-18','13-Jan-19',35200,69);
+INSERT INTO historial_precio values('13-Sep-18','12-Nov-18',15000,69);
+INSERT INTO historial_precio values('12-Nov-18','13-Jan-19',35200,69);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Jan-19',69900,69);
-INSERT INTO historial_precio values('29-Jun-18','30-Nov-18',12400,70);
+INSERT INTO historial_precio values('29-Aug-18','30-Nov-18',12400,70);
 INSERT INTO historial_precio values('30-Nov-18','5-Jan-19',35400,70);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',53000,70);
-INSERT INTO historial_precio values('3-Jul-18','1-Oct-18',32000,71);
-INSERT INTO historial_precio values('1-Oct-18','8-Jan-19',65200,71);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',32000,71);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',65200,71);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',79400,71);
-INSERT INTO historial_precio values('3-Jul-18','1-Oct-18',27000,72);
-INSERT INTO historial_precio values('1-Oct-18','8-Jan-19',55400,72);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',27000,72);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',55400,72);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',69100,72);
-INSERT INTO historial_precio values('3-Jul-18','1-Oct-18',15000,73);
-INSERT INTO historial_precio values('1-Oct-18','8-Jan-19',30200,73);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',15000,73);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',30200,73);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',45520,73);
-INSERT INTO historial_precio values('3-Jul-18','1-Oct-18',26000,74);
-INSERT INTO historial_precio values('1-Oct-18','8-Jan-19',35400,74);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',26000,74);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',35400,74);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',42100,74);
-INSERT INTO historial_precio values('4-Jul-18','2-Oct-18',23000,75);
-INSERT INTO historial_precio values('2-Oct-18','4-Jan-19',29220,75);
+INSERT INTO historial_precio values('4-Sep-18','2-Nov-18',23000,75);
+INSERT INTO historial_precio values('2-Nov-18','4-Jan-19',29220,75);
 INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('4-Jan-19',49910,75);
 
 
@@ -453,21 +464,19 @@ INSERT INTO contrato values(5,'01-Mar-19',15,11);
 
 
 INSERT INTO pedido values(1,'18-Feb-19','30-Apr-19',1);
-
-INSERT INTO pedido values(2,'30-Aug-18','01-Nov-18',2);
-INSERT INTO pedido values(3,'07-Jan-18','16-Mar-19',3);
-
+INSERT INTO pedido values(2,'25-Jul-19','30-Sep-19',2);
+INSERT INTO pedido values(3,'07-Jun-19','16-Aug-19',3);
 INSERT INTO pedido values(4,'24-Jul-19','01-Sep-19',4);
 INSERT INTO pedido values(5,'15-Feb-19','18-Apr-19',5);
-INSERT INTO pedido values(6,'20-Feb-18','01-May-18',6);
+INSERT INTO pedido values(6,'20-Feb-19','01-May-19',6);
 INSERT INTO pedido values(7,'01-Jun-19','01-Aug-19',7);
-INSERT INTO pedido values(8,'07-Jan-18','15-Apr-18',8);
-
+INSERT INTO pedido values(8,'07-Jul-19','15-Sep-19',8);
 INSERT INTO pedido values(9,'15-Apr-19','30-Jun-19',9);
-INSERT INTO pedido values(10,'30-Oct-18','06-Jan-19',10);
-
+INSERT INTO pedido values(10,'30-May-18','30-Jul-19',10);
 INSERT INTO pedido values(11,'07-Jan-19','15-Mar-19',11);
 INSERT INTO pedido values(12,'01-Apr-19','01-Jul-19',12);
+INSERT INTO pedido values(13,'24-Jul-19','30-Sep-19',1);
+
 
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(1,10,1,21);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(2,15,1,22);
@@ -477,10 +486,10 @@ INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(5,5,2,3);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(6,10,2,4);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(7,25,3,38);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(8,30,4,44);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(9,30,4,32);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(10,30,4,23);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(11,15,5,10);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(12,15,5,9);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(9,30,4,42);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(10,30,4,45);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(11,20,5,10);
+
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(13,35,6,5);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(14,45,7,75);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(15,15,7,74);
@@ -497,9 +506,17 @@ INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(25,10,8,32);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(26,10,8,33);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(27,10,8,34);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(28,10,10,35);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(29,20,11,7);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(29,20,12,7);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(30,30,11,8);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(31,35,10,9);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(31,35,13,9);
+
+
+INSERT INTO factura values(1,'23-Apr-19',413600, 1);
+INSERT INTO factura values(2,'11-Apr-19',204935,5);
+INSERT INTO factura values(3,'23-Apr-19',5252625,6);
+INSERT INTO factura values(4,'8-Mar-19',4464731,11);
+INSERT INTO factura values(5,'23-Jun-19',9004500,12);
+
 
 INSERT INTO organigrama(id,nombre,nivel,tipo) values(1,'Gerencia General',1,'Gerencia');
 INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(2,'Gerencia de Planta',2,'Gerencia',1);
@@ -710,3 +727,4 @@ INSERT INTO reunion values(5,'21-Jun-19','Mantenimiento de productividad',18);
 
 INSERT INTO inasistencia_reunion values(55,4,'21-Jun-19',20);
 INSERT INTO inasistencia_reunion values(63,5,'21-Jun-19',18);
+

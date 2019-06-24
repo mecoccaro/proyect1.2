@@ -94,20 +94,20 @@ create table contrato(
 );
 
 create table pedido(
-	id numeric(3) not null ,
+    id numeric(3) primary key ,
     fechaPedido date not null ,
     fechaEntrega date not null ,
-    id_cliente numeric(2)not null ,
-    constraint fk_cliente foreign key (id_cliente) references clientes(id),
-    constraint pk_pedido primary key (id_cliente)
+    id_cliente numeric(2) not null,
+    constraint fk_cliente foreign key (id_cliente) references clientes(id)
+
 );
 
 create table factura(
     numFactura numeric(4) not null ,
     fechaEmision date not null ,
-    total numeric(15)  ,
+    total numeric(15) not null,
     id_pedido numeric(2)not null ,
-    constraint fk_pedido foreign key (id_pedido) references pedido(id_cliente)
+    constraint fk_pedido foreign key (id_pedido) references pedido(id)
 );
 
 create table detalle(
@@ -116,7 +116,7 @@ create table detalle(
     id_pedido numeric(2)not null ,
     id_pieza numeric(2),
     id_vajilla numeric(2) ,
-    constraint fk_pedido foreign key (id_pedido)references pedido(id_cliente),
+    constraint fk_pedido foreign key (id_pedido)references pedido(id),
     constraint fk_pieza foreign key (id_pieza) references pieza(id),
     constraint fk_vajilla foreign key (id_vajilla) references vajilla(id),
     constraint pk_detalle primary key (id,id_pedido)
