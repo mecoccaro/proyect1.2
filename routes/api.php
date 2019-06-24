@@ -27,6 +27,8 @@ Route::resource('empleados/reunion', 'ReunionesController');
 //Control Catalogos
 Route::get('catalogo/clasica/naranja', 'CatalogoController@naranja');
 Route::get('catalogo/country/campinafr', 'CatalogoController@campinafr');
-Route::get('catalogo/country/rosa', 'CatalogoController@crosa');
+Route::get('catalogo/country/rosa', 'CatalogoController@rosa');
 Route::get('catalogo/moderna/eramoderna', 'CatalogoController@eramoderna');
 Route::get('catalogo/moderna/ondasuave', 'CatalogoController@ondasuave');
+
+Route::resource('clientes', 'ClientesController');
