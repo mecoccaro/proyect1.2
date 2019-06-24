@@ -434,7 +434,7 @@ INSERT INTO l_c values(15,75);
 
 INSERT INTO clientes values(1,'Vajillas Santa Rosa','Venezuela');
 INSERT INTO clientes values(2,'Modela tu hogar','Colombia');
-INSERT INTO clientes values(3,'Vajillas importadas Las Américas','Republica dominicana');
+INSERT INTO clientes values(3,'Vajillas Las Américas','Republica dominicana');
 INSERT INTO clientes values(4,'Tu vajilla','Venezuela');
 INSERT INTO clientes values(5,'Target','Usa');
 INSERT INTO clientes values(6,'Business People Unlimited','Colombia');
@@ -453,22 +453,21 @@ INSERT INTO contrato values(5,'01-Mar-19',15,11);
 
 
 INSERT INTO pedido values(1,'18-Feb-19','30-Apr-19',1);
-INSERT INTO pedido values(2,'07-Jan-19','30-Mar-19',1);
-INSERT INTO pedido values(3,'14-Oct-18','24-Dec-18',1);
-INSERT INTO pedido values(4,'30-Aug-18','01-Nov-18',2);
-INSERT INTO pedido values(5,'07-Jan-18','16-Mar-19',3);
-INSERT INTO pedido values(6,'01-Jul-18','06-Sep-18',3);
-INSERT INTO pedido values(7,'24-Jul-19','01-Sep-19',4);
-INSERT INTO pedido values(8,'15-Feb-19','18-Apr-19',5);
-INSERT INTO pedido values(9,'20-Feb-18','01-May-18',6);
-INSERT INTO pedido values(10,'01-Jun-19','01-Aug-19',7);
-INSERT INTO pedido values(11,'07-Jan-18','15-Apr-18',8);
-INSERT INTO pedido values(12,'01-Aug-18','15-Oct-18',8);
-INSERT INTO pedido values(13,'15-Apr-19','30-Jun-19',9);
-INSERT INTO pedido values(14,'30-Oct-18','06-Jan-19',10);
-INSERT INTO pedido values(15,'11-Oct-18','24-Dec-18',11);
-INSERT INTO pedido values(16,'07-Jan-19','15-Mar-19',11);
-INSERT INTO pedido values(17,'01-Apr-19','01-Jul-19',12);
+
+INSERT INTO pedido values(2,'30-Aug-18','01-Nov-18',2);
+INSERT INTO pedido values(3,'07-Jan-18','16-Mar-19',3);
+
+INSERT INTO pedido values(4,'24-Jul-19','01-Sep-19',4);
+INSERT INTO pedido values(5,'15-Feb-19','18-Apr-19',5);
+INSERT INTO pedido values(6,'20-Feb-18','01-May-18',6);
+INSERT INTO pedido values(7,'01-Jun-19','01-Aug-19',7);
+INSERT INTO pedido values(8,'07-Jan-18','15-Apr-18',8);
+
+INSERT INTO pedido values(9,'15-Apr-19','30-Jun-19',9);
+INSERT INTO pedido values(10,'30-Oct-18','06-Jan-19',10);
+
+INSERT INTO pedido values(11,'07-Jan-19','15-Mar-19',11);
+INSERT INTO pedido values(12,'01-Apr-19','01-Jul-19',12);
 
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(1,10,1,21);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(2,15,1,22);
@@ -492,16 +491,15 @@ INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(19,20,10,38);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(20,20,10,40);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(21,35,11,5);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(22,60,12,5);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(23,75,13,10);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(24,10,14,31);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(25,10,14,32);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(26,10,14,33);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(27,10,14,34);
-INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(28,10,14,35);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(29,20,15,7);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(30,30,16,8);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(31,35,17,9); 
-
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(23,75,12,10);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(24,10,8,31);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(25,10,8,32);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(26,10,8,33);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(27,10,8,34);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(28,10,10,35);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(29,20,11,7);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(30,30,11,8);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(31,35,10,9);
 
 INSERT INTO organigrama(id,nombre,nivel,tipo) values(1,'Gerencia General',1,'Gerencia');
 INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(2,'Gerencia de Planta',2,'Gerencia',1);
@@ -585,24 +583,44 @@ INSERT INTO empleado values(52,'Leonardo','Mario','Arias','Rios','18-Nov-93','m'
 INSERT INTO empleado values(53,'Patricio','Ernesto','Enrique','Alvarado','06-Jan-94','m','O-','Bachiller','Operaciones generales',62400,13,20);
 INSERT INTO empleado values(54,'Jose','Miguel','Escudero','Aponte','19-Feb-92','m','AB-','Bachiller','Operaciones generales',57400,13,20);
 INSERT INTO empleado values(55,'Sergio','Alejandro','Castro','Garcia','22-Feb-93','m','O+','Bachiller','Operaciones generales',53300,13,20);
+INSERT INTO empleado values(56,'Anthony','Franchesco','Castaño','Higuera','13-Jul-95','m','O-','Bachiller','Operaciones generales',32450,13,20);
+INSERT INTO empleado values(57,'Luis','Alfredo','Salas','Zambrano','12-Apr-92','m','A-','Bachiller','Operaciones generales',36000,13,20);
+INSERT INTO empleado values(58,'Alberto','Adriano','Ramirez','Gonzales','26-Feb-90','m','AB+','Bachiller','Operaciones generales',45200,13,20);
 
-INSERT INTO empleado values(56,'Waldo','Ricardo','Hernandez','Lopez','18-Oct-89','m','A-','Bachiller','Mecanico',43300,14,8);
-INSERT INTO empleado values(57,'Pablo','Moises','Zambrano','Lopez','14-Dec-90','m','O+','Bachiller','Mecanico',39800,14,8);
-INSERT INTO empleado values(58,'Abraham','Gabriel','Torres','Garcia','15-Feb-74','m','A+','Ingeniero mecanico','Mecanico',49300,14,8);
-INSERT INTO empleado values(59,'Adriana','Agny','Mendez','Sanchez','24-Oct-82','f','O-','Bachiller','Electricista',38200,14,8);
-INSERT INTO empleado values(60,'Adrian','Alejandro','Zambrano','Aquino','30-Aug-83','m','A-','Bachiller','Electricista',35200,14,8);
-INSERT INTO empleado values(61,'Amanda','Luisa','Cristal','Adeney','08-Oct-93','f','O-','Bachiller','Mecanico',33500,14,8);
-INSERT INTO empleado values(62,'Daniel','Francisco','Oropeza','Rivas','09-Nov-92','m','AB-','Bachiller','Electricista',33500,14,8);
+INSERT INTO empleado values(59,'Alvaro','Daniel','Meza','Villanueva','01-Nov-95','m','B+','Bachiller','Operaciones generales',39200,13,20);
+INSERT INTO empleado values(60,'Juan','Carlos','Villanueva','Hidalgo','03-May-94','m','B-','Bachiller','Operaciones generales',38700,13,20);
+INSERT INTO empleado values(61,'Diego','Alejandro','Suarez','Alfonzo','16-Dec-93','m','O-','Bachiller','Operaciones generales',37500,13,20);
+INSERT INTO empleado values(62,'Mario','Josue','Hernandez','Casas','29-Mar-90','m','AB-','Bachiller','Operaciones generales',38290,13,20);
+INSERT INTO empleado values(63,'Douglas','Eduardo','Delgado','Rojas','27-Aug-88','m','B+','Bachiller','Operaciones generales',46500,13,20);
+INSERT INTO empleado values(64,'Frank','Fernando','Gomez','Galicia','05-Nov-89','m','A+','Bachiller','Operaciones generales',42500,13,20);
+INSERT INTO empleado values(65,'Andres','Antonio','Iniesta','Fernandez','10-Aug-86','m','O-','Bachiller','Operaciones generales',39750,13,20);
+INSERT INTO empleado values(66,'Gustavo','Adolfo','Sivira','Marquez','06-Jan-93','m','A-','Bachiller','Operaciones generales',32500,13,20);
+INSERT INTO empleado values(67,'Jean','Francisco','Duran','Arteaga','07-Jan-93','m','A+','Bachiller','Operaciones generales',32500,13,20);
+INSERT INTO empleado values(68,'Jonathan','Alfredo','De Sousa','Del Valle','15-Feb-92','m','O-','Bachiller','Operaciones generales',36000,13,20);
+INSERT INTO empleado values(69,'Leonardo','Andres','Calles','Bastidas','8-Oct-91','m','B-','Bachiller','Operaciones generales',42500,13,20);
+INSERT INTO empleado values(70,'Luis','Miguel','Guillermo','Moncada','12-Nov-89','m','A-','Bachiller','Operaciones generales',38000,13,20);
+INSERT INTO empleado values(71,'Pablo','Jose','Lopez','Abreu','04-Dec-90','m','A+','Bachiller','Operaciones generales',33200,13,20);
+INSERT INTO empleado values(72,'Omar','Rafael','Cordero','Carvajal','19-Sep-92','m','A-','Bachiller','Operaciones generales',44200,13,20);
+INSERT INTO empleado values(73,'Rafael','Jesus','Alvarez','Calderon','01-Jan-90','m','A-','Bachiller','Operaciones generales',31500,13,20);
+INSERT INTO empleado values(74,'Ricardo','Ignacio','Mota','Indalecio','20-Jul-86','m','AB-','Bachiller','Operaciones generales',35600,13,20);
+INSERT INTO empleado values(75,'Robert','Manuel','Madrid','Santolla','06-Jul-93','m','B+','Bachiller','Operaciones generales',46200,13,20);
 
-INSERT INTO empleado values(63,'Andrea','Alejandra','Rivas','Ramirez','10-Nov-92','f','B-','Bachiller','Operaciones generales',27500,4,5);
-INSERT INTO empleado values(64,'Andreina','Alexandra','Mujica','Calzadilla','29-Sep-90','f','B+','Bachiller','Operaciones generales',26300,4,5);
-INSERT INTO empleado values(65,'Angelica','Victoria','Russo','Valdivieso','28-Nov-93','f','O-','Bachiller','Operaciones generales',23400,4,5);
+INSERT INTO empleado values(76,'Waldo','Ricardo','Hernandez','Lopez','18-Oct-89','m','A-','Bachiller','Mecanico',43300,14,8);
+INSERT INTO empleado values(77,'Pablo','Moises','Zambrano','Lopez','14-Dec-90','m','O+','Bachiller','Mecanico',39800,14,8);
+INSERT INTO empleado values(78,'Abraham','Gabriel','Torres','Garcia','15-Feb-74','m','A+','Ingeniero mecanico','Mecanico',49300,14,8);
+INSERT INTO empleado values(79,'Adriana','Agny','Mendez','Sanchez','24-Oct-82','f','O-','Bachiller','Electricista',38200,14,8);
+INSERT INTO empleado values(80,'Adrian','Alejandro','Zambrano','Aquino','30-Aug-83','m','A-','Bachiller','Electricista',35200,14,8);
+INSERT INTO empleado values(81,'Amanda','Luisa','Cristal','Adeney','08-Oct-93','f','O-','Bachiller','Mecanico',33500,14,8);
+INSERT INTO empleado values(82,'Daniel','Francisco','Oropeza','Rivas','09-Nov-92','m','AB-','Bachiller','Electricista',33500,14,8);
 
-INSERT INTO empleado values(66,'Arturo','Alejandro','Tariba','Ariza','30-Oct-91','m','AB-','Bachiller','Operaciones generales',19400,5,6);
-INSERT INTO empleado values(67,'Brayan','Alejo','Quintero','Navas','2-Jan-89','m','O+','Bachiller','Operaciones generales',20000,5,6);
-INSERT INTO empleado values(68,'Anthony','Ernesto','Milano','Molina','3-May-94','m','O+','Bachiller','Operaciones generales',18500,5,6);
-INSERT INTO empleado values(69,'Carlos','Daniel','Flores','Salazar','19-Apr-92','m','O+','Bachiller','Operaciones generales',16400,5,6);
-INSERT INTO empleado values(70,'Juan','Pedro','Jaramillo','Leon','20-Jul-90','m','O-','Bachiller','Operaciones generales',23400,5,6);
+INSERT INTO empleado values(83,'Andrea','Alejandra','Rivas','Ramirez','10-Nov-92','f','B-','Bachiller','Operaciones generales',27500,4,5);
+INSERT INTO empleado values(84,'Andreina','Alexandra','Mujica','Calzadilla','29-Sep-90','f','B+','Bachiller','Operaciones generales',26300,4,5);
+INSERT INTO empleado values(85,'Angelica','Victoria','Russo','Valdivieso','28-Nov-93','f','O-','Bachiller','Operaciones generales',23400,4,5);
+INSERT INTO empleado values(86,'Arturo','Alejandro','Tariba','Ariza','30-Oct-91','m','AB-','Bachiller','Operaciones generales',19400,5,6);
+INSERT INTO empleado values(87,'Brayan','Alejo','Quintero','Navas','2-Jan-89','m','O+','Bachiller','Operaciones generales',20000,5,6);
+INSERT INTO empleado values(88,'Anthony','Ernesto','Milano','Molina','3-May-94','m','O+','Bachiller','Operaciones generales',18500,5,6);
+INSERT INTO empleado values(89,'Carlos','Daniel','Flores','Salazar','19-Apr-92','m','O+','Bachiller','Operaciones generales',16400,5,6);
+INSERT INTO empleado values(90,'Juan','Pedro','Jaramillo','Leon','20-Jul-90','m','O-','Bachiller','Operaciones generales',23400,5,6);
 
 INSERT INTO telefono(cod,numero,id_cliente) values(58,4241234567,1);
 INSERT INTO telefono(cod,numero,id_cliente) values(57,0132592034,2);
@@ -639,4 +657,56 @@ INSERT INTO telefono(cod,numero,id_empleado) values(58,4245534256,19);
 INSERT INTO telefono(cod,numero,id_empleado) values(58,2124439661,20);
 
 
-INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(1,'');
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(1,'24-Jan-19',10000,'Hora extra',1,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(2,'24-Jan-19',10000,'Hora extra',2,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(3,'24-Jan-19',10000,'Hora extra',3,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(4,'23-May-18',5000,'Amonestaciones',5,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado) values(5,'28-Dec-18',12000,'Bono mes',3);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(6,'04-Feb-19',5000,'Amonestaciones',28,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(7,'15-Jan-19',10000,'Amonestaciones',32,4);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(8,'07-Jan-19',2500,'Amonestaciones',49,1);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(9,'15-Jun-19',15000,'Hora extra',55,3);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(10,'13-May-19',10000,'Hora extra',52,2);
+
+INSERT INTO salud_alergias values(1,'Alergia Estacional','Alergia','Alergias causadas por alérgenos de exteriores como el polen.');
+INSERT INTO salud_alergias values(2,'Alergias de Interior','Alergia','Las alergias de interior son desencadenadas por cosas como los ácaros del polvo que prosperan en entornos templados y húmedos.');
+INSERT INTO salud_alergias values(3,'Alergias a las Mascotas','Alergia','En realidad, las alergias a las mascotas no son una reacción al pelo de su mascota, sino a las proteínas de las células cutáneas del animal.');
+INSERT INTO salud_alergias values(4,'Alergias Alimentarias','Alergia','Las reacciones adversas ante una alergia alimentaria se producen de forma muy clara, definida e inmediata. Ocurren por intoxicacion al ingerir un alimento');
+INSERT INTO salud_alergias values(5,'Alergias al Polen','Alergia','Ocurre a la exposicion de climas o espacios abiertos');
+
+INSERT INTO e_sa values(4,1);
+INSERT INTO e_sa values(9,3);
+INSERT INTO e_sa values(10,3);
+INSERT INTO e_sa values(16,2);
+INSERT INTO e_sa values(24,5);
+INSERT INTO e_sa values(29,4);
+INSERT INTO e_sa values(32,1);
+INSERT INTO e_sa values(36,2);
+INSERT INTO e_sa values(38,3);
+INSERT INTO e_sa values(49,5);
+INSERT INTO e_sa values(50,1);
+INSERT INTO e_sa values(55,4);
+INSERT INTO e_sa values(63,2);
+INSERT INTO e_sa values(65,1);
+INSERT INTO e_sa values(66,5);
+INSERT INTO e_sa values(69,2);
+
+INSERT INTO hist_turno_men values('7-Jan-19',3,49,'8-Jan-19');
+INSERT INTO hist_turno_men values('1-Feb-19',3,50,'02-Feb-19');
+INSERT INTO hist_turno_men values('1-Jul-19',2,59,'8-Jul-19');
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('24-Jun-19',1,62);
+INSERT INTO hist_turno_men values('7-May-19',1,66,'14-May-19');
+INSERT INTO hist_turno_men values('01-Apr-19',3,69,'02-Apr-19');
+INSERT INTO hist_turno_men values('02-Apr-19',3,70,'03-Apr-19');
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('22-Jun-19',2,71);
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('31-May-19',1,74);
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('03-Jun-19',2,75);
+
+INSERT INTO reunion values(1,'31-May-19','Consideramos subir la seleccion en un 10% la siguiente semana',14);
+INSERT INTO reunion values(2,'07-Jun-19','Aumento de productividad en Esmaltado',15);
+INSERT INTO reunion values(3,'14,Jun,19','Aumentar la productividad a un 10%',16);
+INSERT INTO reunion values(4,'21-Jun-19','Resolver Problemas con las maquinas',20);
+INSERT INTO reunion values(5,'21-Jun-19','Mantenimiento de productividad',18);
+
+INSERT INTO inasistencia_reunion values(55,4,'21-Jun-19',20);
+INSERT INTO inasistencia_reunion values(63,5,'21-Jun-19',18);

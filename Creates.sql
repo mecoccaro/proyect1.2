@@ -170,7 +170,7 @@ create table telefono(
 
 create table detalle_exp(
     id numeric(3)not null ,
-    fechaInicio numeric(2)not null ,
+    fechaInicio date not null ,
     monto numeric(7)not null ,
     motivo varchar(30)not null ,
     id_empleado numeric(3)not null ,
@@ -184,9 +184,10 @@ create table detalle_exp(
 
 create table salud_alergias(
     id numeric(2)primary key ,
-    nombre varchar(20)not null ,
+    nombre varchar(30)not null ,
     tipo varchar(10)not null ,
-    descripcion varchar(200)
+    descripcion varchar(200) ,
+    constraint c_tipo check(tipo in('Alergia','Otro'))
 );
 
 create table e_sa(
