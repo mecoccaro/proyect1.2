@@ -10,166 +10,192 @@ INSERT INTO molde(id,tipo,tipoTaza) values(9,'Taza','Cafe con plato');
 INSERT INTO molde(id,tipo,tipoTaza) values(10,'Taza','Moka con plato');
 INSERT INTO molde(id,tipo,tipoTaza)	values(11,'Taza','Moka sin plato');
 INSERT INTO molde(id,tipo,tamano) values(12,'Cazuela',19*12);
-INSERT INTO molde(id,tipo,tamano,forma) values(13,'Bandeja',44*22,'ovalada, rectangular');
-INSERT INTO molde(id,tipo,tamano,forma) values(14,'Bandeja',35*18,'ovalada, rectangular');
-INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(15,'Plato','Hondo',24,'redondo, cuadrado');
+INSERT INTO molde(id,tipo,tamano,forma) values(13,'Bandeja',44*22,'ovalada');
+INSERT INTO molde(id,tipo,tamano,forma) values(14,'Bandeja',35*18,'ovalada');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(15,'Plato','Hondo',24,'redondo');
 INSERT INTO molde(id,tipo,tamano) values(16,'Ensaladera',38*22);
 INSERT INTO molde(id,tipo,tamano) values(17,'Ensaladera',30*18);
 INSERT INTO molde(id,tipo,tamano) values(18,'Cazuela',7*6);
 INSERT INTO molde(id,tipo,tipoPlato,tamano) values(19,'Plato','Taza Moka',14*1);
-INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(20,'Plato','Llano',27*27,'redondo, cuadrado, rectangular');
-INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(21,'Plato','Postre',23*23,'redondo, cuadrado, rectangular');
-INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(22,'Plato','Presentacion',35*35,'redondo, cuadrado, rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(20,'Plato','Llano',27*27,'redondo');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(21,'Plato','Postre',23*23,'redondo,');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(22,'Plato','Presentacion',35*35,'redondo');
 INSERT INTO molde(id,tipo,tamano) values(23,'Cazuela',47*38);
 INSERT INTO molde(id,tipo,tamano) values(24,'Cazuela',26*20);
 INSERT INTO molde(id,tipo,tamano) values(25,'Cazuela',28*5);
 INSERT INTO molde(id,tipo,tipoPlato,tamano) values(26,'Plato','Pasta',28*28);
 
+INSERT INTO molde(id,tipo,tamano,forma) values(27,'Bandeja',44*22,'rectangular');
+INSERT INTO molde(id,tipo,tamano,forma) values(28,'Bandeja',35*18,'rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(29,'Plato','Hondo',24,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(30,'Plato','Llano',27*27,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(31,'Plato','Postre',23*23,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(32,'Plato','Presentacion',35*35,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(33,'Plato','Llano',27*27,'rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(34,'Plato','Postre',23*23,'rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(35,'Plato','Presentacion',35*35,'rectangular');
 
-INSERT INTO coleccion values(1,'Amazonia Brasilera','Familiar','Clasica');
-INSERT INTO coleccion values(2,'Floral','Familiar','Clasica');
-INSERT INTO coleccion values(3,'Lineal Naranja','Familiar','Clasica');
-INSERT INTO coleccion values(4,'Lineal Cereza','Familiar','Clasica');
-INSERT INTO coleccion values(5,'Lineal Verde','Familiar','Clasica');
-INSERT INTO coleccion values(6,'Campina Inglesa','Familiar','Country');
-INSERT INTO coleccion values(7,'Campina Francesa','Familiar','Country');
+
+INSERT INTO coleccion values(1,'Lineal Naranja','Familiar','Clasica');
+INSERT INTO coleccion values(2,'Campina Francesa','Familiar','Country');
+INSERT INTO coleccion values(3,'Country Rosa','Institucional','Country');
+INSERT INTO coleccion values(4,'Era Moderna','Familiar','Moderna');
+INSERT INTO coleccion values(5,'Ondas Suaves','Familiar','Moderna');
+
+INSERT INTO coleccion values(6,'Floral','Familiar','Clasica');
+INSERT INTO coleccion values(7,'Amazonia Brasilera','Familiar','Clasica');
 INSERT INTO coleccion values(8,'Mimosas','Familiar','Country');
 INSERT INTO coleccion values(9,'Desayuno Campestre','Institucional','Country');
 INSERT INTO coleccion values(10,'Country Blanco','Institucional','Country');
 INSERT INTO coleccion values(11,'Country Azul','Institucional','Country');
-INSERT INTO coleccion values(12,'Country Rosa','Institucional','Country');
-INSERT INTO coleccion values(13,'Ondas Suaves','Familiar','Moderna');
-INSERT INTO coleccion values(14,'Era Moderna','Familiar','Moderna');
+INSERT INTO coleccion values(12,'Lineal Cereza','Familiar','Clasica');
+INSERT INTO coleccion values(13,'Lineal Verde','Familiar','Clasica');
+INSERT INTO coleccion values(14,'Campina Inglesa','Familiar','Country');
 INSERT INTO coleccion values(15,'Floral Moderna','Familiar','Moderna');
 
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(1,1,1);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(2,1,3);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(3,1,8);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(4,1,9);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(5,1,10);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(1,1,3);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(2,1,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(3,1,5);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(4,1,8);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(5,1,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(6,1,11);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(6,2,6);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(7,2,7);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(8,2,21);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(9,2,22);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(10,2,19);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(7,1,33);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(8,1,34);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(9,1,35);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(10,1,28);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(11,1,16);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(11,3,23);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(12,3,24);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(13,3,16);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(14,3,17);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(15,3,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(12,2,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(13,2,17);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(14,2,21);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(15,2,24);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(16,2,14);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(16,4,23);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(17,4,24);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(18,4,16);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(19,4,17);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(20,4,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(17,2,1);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(18,2,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(19,2,10);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(20,2,32);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(21,2,25);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(21,5,23);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(22,5,24);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(23,5,16);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(24,5,17);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(25,5,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(22,3,5);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(23,3,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(24,3,2);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(26,6,3);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(27,6,1);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(28,6,7);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(29,6,5);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(30,6,10);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(25,3,16);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(26,3,17);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(27,3,27);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(28,3,20);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(31,7,17);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(32,7,18);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(33,7,20);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(34,7,2);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(35,7,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(29,3,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(30,3,15);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(31,3,18);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(32,3,21);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(36,8,1);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(37,8,2);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(38,8,3);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(39,8,4);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(40,8,4);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(33,4,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(34,4,18);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(35,4,1);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(41,9,24);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(42,9,20);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(43,9,17);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(44,9,14);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(45,9,18);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(36,4,19);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(37,4,9);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(38,4,15);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(39,4,33);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(40,4,35);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(46,10,20);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(47,10,21);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(48,10,22);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(49,10,23);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(50,10,26);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(41,5,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(42,5,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(43,5,30);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(44,5,31);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(45,5,4);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(46,5,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(47,5,6);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(48,5,8);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(51,11,20);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(52,11,21);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(53,11,22);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(54,11,23);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(55,11,26);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(49,5,2);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(50,5,3);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(51,5,5);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(52,5,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(53,5,14);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(56,12,20);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(57,12,21);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(58,12,22);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(59,12,23);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(60,12,26);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(54,6,23);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(55,6,26);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(56,6,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(57,7,21);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(58,7,22);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(59,7,23);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(60,7,26);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(61,13,16);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(62,13,12);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(63,13,20);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(64,13,21);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(65,13,22);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(61,8,16);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(62,8,12);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(63,9,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(64,9,21);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(65,9,22);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(66,14,8);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(67,14,9);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(68,14,1);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(69,14,4);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(70,14,6);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(66,10,8);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(67,10,9);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(68,11,1);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(69,12,4);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(70,12,6);
 
-INSERT INTO pieza(id,id_coleccion,id_molde) values(71,15,2);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(72,15,3);
-INSERT INTO pieza(id,id_coleccion,id_molde) values(73,15,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(71,13,2);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(72,14,3);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(73,14,14);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(74,15,18);
 INSERT INTO pieza(id,id_coleccion,id_molde) values(75,15,24);
 
-INSERT INTO vajilla(id,nombre,numPers) values(1,'Lineal Verde Set Cazuelas',4);
-INSERT INTO vajilla(id,nombre,numPers) values(2,'Lineal Verde Set Full',6);
-INSERT INTO vajilla(id,nombre,numPers) values(3,'Campina Inglesa Set Te',2);
-INSERT INTO vajilla(id,nombre,numPers) values(4,'Campina Inglesa Set Te Full',6);
-INSERT INTO vajilla(id,nombre,numPers) values(5,'Campina Francesa Jarras',4);
-INSERT INTO vajilla(id,nombre,numPers) values(6,'Campina Francesa Set',6);
-INSERT INTO vajilla(id,nombre,numPers) values(7,'Desayuno Campestre Bandejas',6);
-INSERT INTO vajilla(id,nombre,numPers) values(8,'Desayuno Campestre Cazuelas',6);
-INSERT INTO vajilla(id,nombre,numPers) values(9,'Era Moderna Set Envases',4);
-INSERT INTO vajilla(id,nombre,numPers) values(10,'Era Moderna Set Full',6);
+INSERT INTO vajilla(id,nombre,numPers) values(1,'Set atardecer',6);
+INSERT INTO vajilla(id,nombre,numPers) values(2,'Set campestre',5);
+INSERT INTO vajilla(id,nombre,numPers) values(3,'Set amor',2);
+INSERT INTO vajilla(id,nombre,numPers) values(4,'Set cocina francesa',5);
+INSERT INTO vajilla(id,nombre,numPers) values(5,'Set orquideo',6);
+INSERT INTO vajilla(id,nombre,numPers) values(6,'Set bouquet',16);
+INSERT INTO vajilla(id,nombre,numPers) values(7,'Set futurista' ,3);
+INSERT INTO vajilla(id,nombre,numPers) values(8,'Set viajero',1);
+INSERT INTO vajilla(id,nombre,numPers) values(9,'Set vacacional',24);
+INSERT INTO vajilla(id,nombre,numPers) values(10,'Set tranquilidad',1);
 
-INSERT INTO v_p values(1,21,1);
-INSERT INTO v_p values(1,22,1);
-INSERT INTO v_p values(1,22,2);
-INSERT INTO v_p values(1,23,2);
-INSERT INTO v_p values(1,24,2);
-INSERT INTO v_p values(2,30,3);
-INSERT INTO v_p values(1,26,4);
-INSERT INTO v_p values(1,27,4);
-INSERT INTO v_p values(1,28,4);
-INSERT INTO v_p values(1,29,4);
-INSERT INTO v_p values(2,34,5);
-INSERT INTO v_p values(1,31,6);
-INSERT INTO v_p values(1,32,6);
-INSERT INTO v_p values(1,33,6);
-INSERT INTO v_p values(1,35,6);
-INSERT INTO v_p values(1,43,7);
-INSERT INTO v_p values(1,44,7);
-INSERT INTO v_p values(1,41,8);
-INSERT INTO v_p values(1,45,8);
-INSERT INTO v_p values(1,71,9);
-INSERT INTO v_p values(1,72,9);
-INSERT INTO v_p values(1,71,10);
-INSERT INTO v_p values(1,72,10);
-INSERT INTO v_p values(1,73,10);
-INSERT INTO v_p values(1,74,10);
-INSERT INTO v_p values(1,75,10);
+INSERT INTO v_p values(1,1,1);
+INSERT INTO v_p values(1,2,1);
+INSERT INTO v_p values(1,3,1);
+INSERT INTO v_p values(6,4,1);
+
+INSERT INTO v_p values(2,5,2);
+INSERT INTO v_p values(5,6,2);
+
+INSERT INTO v_p values(2,12,3);
+INSERT INTO v_p values(1,13,3);
+INSERT INTO v_p values(2,14,3);
+
+INSERT INTO v_p values(5,15,4);
+INSERT INTO v_p values(2,16,4);
+INSERT INTO v_p values(5,14,4);
+
+INSERT INTO v_p values(3,22,5);
+INSERT INTO v_p values(1,23,5);
+INSERT INTO v_p values(1,24,5);
+
+INSERT INTO v_p values(2,25,6);
+INSERT INTO v_p values(2,26,6);
+INSERT INTO v_p values(6,27,6);
+INSERT INTO v_p values(16,28,6);
+
+INSERT INTO v_p values(3,33,7);
+INSERT INTO v_p values(3,34,7);
+
+INSERT INTO v_p values(1,33,8);
+INSERT INTO v_p values(1,35,8);
+
+INSERT INTO v_p values(4,41,9);
+INSERT INTO v_p values(4,42,9);
+INSERT INTO v_p values(24,43,9);
+INSERT INTO v_p values(24,44,9);
+
+INSERT INTO v_p values(1,45,10);
+INSERT INTO v_p values(1,46,10);
+INSERT INTO v_p values(1,47,10);
+INSERT INTO v_p values(1,48,10);
+
 
 INSERT INTO historial_precio values('4-Mar-18','1-Jul-18',12000,1);
 INSERT INTO historial_precio values('1-Jul-18','1-Sep-18',44000,1);
@@ -488,19 +514,18 @@ INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(7,25,3,38);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(8,30,4,44);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(9,30,4,42);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(10,30,4,45);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(11,20,5,10);
-
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(11,20,5,1);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(13,35,6,5);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(14,45,7,75);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(15,15,7,74);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(16,30,8,7);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(17,30,9,8);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(16,30,8,3);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(17,30,9,1);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(18,20,10,39);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(19,20,10,38);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(20,20,10,40);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(21,35,11,5);
 INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(22,60,12,5);
-INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(23,75,12,10);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(23,75,12,6);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(24,10,8,31);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(25,10,8,32);
 INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(26,10,8,33);

@@ -63,9 +63,9 @@ create table historial_precio(
 create table vajilla(
     id numeric(2)primary key ,
     nombre varchar(30)not null ,
-    numPers numeric(1)not null ,
+    numPers numeric(2)not null ,
     descripcion varchar(200),
-    constraint c_numPers check (numPers in (2,4,6))
+    constraint c_numPers check (numPers between 1 AND 32)
 );
 
 create table v_p(
