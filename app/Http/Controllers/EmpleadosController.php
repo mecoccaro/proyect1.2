@@ -6,6 +6,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Facades\Redirect;
+//use Illuminate\View\View;
+use View;
 
 class EmpleadosController extends Controller
 {
@@ -15,6 +17,8 @@ class EmpleadosController extends Controller
         $empleado = DB::table('empleado')
             ->select('*')
             ->get();
+        return View::make('empleados.index')
+            ->with('empleados',$empleado);
     }
 
 
@@ -38,39 +42,26 @@ class EmpleadosController extends Controller
         $empleado->id_supervisor=$request->get('id_supervisor');
         $empleado->save();
 
-        return redirect('/');
-    }
-
-    public function alergias($idexpediente)
-    {
-        $e_sa = DB::table('e_sa')
-            ->where('id_empleado', $idexpediente)
-            ->get();
-    }
-
-    public function horneros($idexpediente)
-    {
-        $hist_turno = DB::table('hist_turno_men')
-            ->where('id_empleado', $idexpediente)
-            ->get();
+        return Redirect::back();//hacer un redirect a una vista para poner alergias
     }
 
 
-   /* public function show($id)
+
+    public function show($id)
     {
 
-    }*/
+    }
 
 
-   /* public function edit(Request $request,$idexpediente)
+    public function edit($idexpediente)
     {
 
-    }*/
+    }
 
 
     public function update(Request $request,$idexpediente)
     {
-        $empleado=Empleado::findOrFail($idexpediente);
+        $empleado=Empleado::find($idexpediente);
         $empleado->idexpediente=$request->get('idexpediente');
         $empleado->nombre=$request->get('nombre');
         $empleado->apellido=$request->get('apellido');
@@ -88,8 +79,28 @@ class EmpleadosController extends Controller
 
     public function destroy($idexpediente)
     {
-        $empleado=Empleado::findOrFail($idexpediente);
+        $empleado=Empleado::find($idexpediente);
         $empleado->delete();
-        return Redirect::to('/');
+        return Redirect::back();
+    }
+    public function alergias($idexpediente)
+    {
+        $e_sa = DB::table('e_sa')
+            ->where('id_empleado', $idexpediente)
+            ->get();
+    }
+
+    public function horneros($idexpediente)
+    {
+        $hist_turno = DB::table('hist_turno_men')
+            ->where('id_empleado', $idexpediente)
+            ->get();
+    }
+
+    public function expediente($idexpediente)
+    {
+        $expedientes = DB::table('detale_exp')
+            ->where('id_empleado', $idexpediente)
+            ->get();
     }
 }

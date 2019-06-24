@@ -41,7 +41,7 @@ class ClientesController extends Controller
 
     public function edit($id)
     {
-        //
+
     }
 
 

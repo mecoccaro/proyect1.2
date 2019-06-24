@@ -16,7 +16,7 @@ class ReunionesController extends Controller
 
     public function create()
     {
-        //
+
     }
 
 

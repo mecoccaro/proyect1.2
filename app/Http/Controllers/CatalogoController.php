@@ -9,7 +9,7 @@ class CatalogoController extends Controller
 
     public function index()
     {
-        //
+
     }
 
 
