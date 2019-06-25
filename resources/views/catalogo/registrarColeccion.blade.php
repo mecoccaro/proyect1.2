@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Empleados</title>
+    <title>Coleccion</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -38,8 +38,10 @@
             position: absolute;
             left: 5px;
             top: 5px;
+            ext-transform: uppercase;
             color: #636b6f;
             padding: 0 25px;
+            font-size: 13px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
@@ -52,32 +54,34 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 35px;
         }
 
-        .links  a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
 
         .m-b-md {
             margin-bottom: 30px;
         }
 
-        li{
+        input, select, textarea, button{
             color: #636b6f;
-            padding: 5px 50px;
+            padding: 0 25px;
             font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;;
+        }
+
+        .top-left2 a {
+            position: absolute;
+            left: 183px;
+            top: 5px;
+            color: #636b6f;
+            padding: 0 25px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
-            list-style-type:none;
+            font-size: 30px;
         }
     </style>
 </head>
@@ -86,20 +90,46 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Control de Empleados
+            <form method="post">
+                <div>
+                    <label for="id_coleccion">ID Coleccion:</label>
+                    <input type="number" id="id_empleado" name="id_empleado">
+                </div>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="linea">Linea:</label>
+                    <select>
+                        <option value="Familiar">Familiar</option>
+                        <option value="Institucional">Institucional</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="coleccion">Coleccion:</label>
+                    <select>
+                        <option value="Clasica">Clasica</option>
+                        <option value="Country">Country</option>
+                        <option value="Moderna">Moderna</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Registrar Coleccion</button>
+                </div>
+            </form>
         </div>
 
         <div class="top-left">
             <a href="/">Home</a>
         </div>
 
-        <div class="links">
-            <ul><li><a href="expediente">Crear Expediente</a></li>
-                <li><a href="minuta">Registrar Minuta</a></li>
-                <li><a href="turnoHornero">Crear turnos para horneros</a></li>
-            </ul>
+        <div class="top-left2">
+            <a href="/catalogo">Catalogo</a>
         </div>
+
     </div>
+</div>
 </div>
 </body>
 </html>

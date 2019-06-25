@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Catalogo</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -38,10 +38,8 @@
             position: absolute;
             left: 5px;
             top: 5px;
-            ext-transform: uppercase;
             color: #636b6f;
             padding: 0 25px;
-            font-size: 13px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
@@ -96,12 +94,10 @@
         </div>
 
         <div class="links">
-            <ul><li><a href="/">Mostrar todos los empleados</a></li>
-                <li><a href="https://laracasts.com">Buscar</a></li>
-                <li><a href="https://laravel-news.com">Editar</a></li>
-                <li> <a href="https://blog.laravel.com">Crear</a></li>
-                <li> <a href="https://nova.laravel.com">Mostrar expediente</a></li>
-                <li> <a href="https://forge.laravel.com">Crear Expediente</a></li>
+            <ul>
+                <li><a href="registrarColeccion">Registrar Coleccion</a></li>
+                <li><a href="registrarPieza">Registrar Pieza</a></li>
+                <li><a href="registrarVajilla">Registrar Vajilla</a></li>
             </ul>
         </div>
     </div>

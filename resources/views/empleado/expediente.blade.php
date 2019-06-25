@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Empleados</title>
+    <title>Expediente</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -37,6 +37,18 @@
         .top-left a {
             position: absolute;
             left: 5px;
+            top: 5px;
+            color: #636b6f;
+            padding: 0 25px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .top-left2 a {
+            position: absolute;
+            left: 190px;
             top: 5px;
             color: #636b6f;
             padding: 0 25px;
@@ -86,17 +98,21 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Control de Empleados
+            Registrar Expediente
         </div>
 
         <div class="top-left">
             <a href="/">Home</a>
         </div>
 
+        <div class="top-left2">
+            <a href="/empleados">Empleados</a>
+        </div>
+
         <div class="links">
-            <ul><li><a href="expediente">Crear Expediente</a></li>
-                <li><a href="minuta">Registrar Minuta</a></li>
-                <li><a href="turnoHornero">Crear turnos para horneros</a></li>
+            <ul><li><a href="registrarBono">Registrar Bono</a></li>
+                <li><a href="registrarSancion">Registrar Sancion</a></li>
+                <li><a href="registrarAsistencia">Registrar Asistencia</a></li>
             </ul>
         </div>
     </div>

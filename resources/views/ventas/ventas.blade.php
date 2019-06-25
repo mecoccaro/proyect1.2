@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Empleados</title>
+    <title>Ventas</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -72,7 +72,7 @@
         li{
             color: #636b6f;
             padding: 5px 50px;
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
@@ -86,7 +86,7 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Control de Empleados
+            Control de Ventas
         </div>
 
         <div class="top-left">
@@ -94,9 +94,10 @@
         </div>
 
         <div class="links">
-            <ul><li><a href="expediente">Crear Expediente</a></li>
-                <li><a href="minuta">Registrar Minuta</a></li>
-                <li><a href="turnoHornero">Crear turnos para horneros</a></li>
+            <ul><li><a href="crearContrato">Crear Contrato</a></li>
+                <li><a href="registrarCliente">Registrar Cliente</a></li>
+                <li><a href="generarPedido">Generar Pedido</a></li>
+                <li> <a href="generarFactura">Generar factura</a></li>
             </ul>
         </div>
     </div>

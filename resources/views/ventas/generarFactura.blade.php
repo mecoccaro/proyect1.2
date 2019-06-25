@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Factura</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -38,10 +38,8 @@
             position: absolute;
             left: 5px;
             top: 5px;
-            ext-transform: uppercase;
             color: #636b6f;
             padding: 0 25px;
-            font-size: 13px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
@@ -70,6 +68,19 @@
             letter-spacing: .1rem;
             text-decoration: none;;
         }
+
+        .top-left2 a {
+            position: absolute;
+            left: 183px;
+            top: 5px;
+            color: #636b6f;
+            padding: 0 25px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
@@ -77,47 +88,25 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form method="post">
+            <form action="" method="post">
                 <div>
-                    <label for="id_empleado">ID Empleado</label>
-                    <input type="number" id="id_empleado" name="id_empleado">
+                    <label for="num">Numero de Factura:</label>
+                    <input type="number" id="num" name="">
                 </div>
                 <div>
-                    <label for="id_expediente">Numero de Expediente</label>
-                    <input type="number" id="id_expediente" name="id_expediente">
+                    <label for="fecha">Fecha Emision:</label>
+                    <input type="date" id="fecha" name="">
                 </div>
                 <div>
-                    <label for="fechaInic">Fecha de Inicio: </label>
-                    <input type="date" id="fechaInic" name="fechaInic">
+                    <label for="total">Total:</label>
+                    <input type="number" id="total" name="">
                 </div>
                 <div>
-                    <label for="monto">Monto:</label>
-                    <input type="number" id="monto" name="monto">
+                    <label for="id_pedido">ID Pedido:</label>
+                    <input type="number" id="id_pedido" name="">
                 </div>
                 <div>
-                    <label for="motivo">Motivo:</label>
-                    <select>
-                        <option value="Bono mes">Bono Mes</option>
-                        <option value="Bono anual">Bono anual</option>
-                        <option value="Amonestaciones">Amonestacion</option>
-                        <option value="Tarde hora">Retraso</option>
-                        <option value="Hora extra">Hora extra</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="retrasos">Retrasos:</label>
-                    <input type="number" id="retrasos" name="retrasos">
-                </div>
-                <div>
-                    <label for="horas extras">Horas Extras:</label>
-                    <input type="number" id="horas extras" name="horas extras">
-                </div>
-                <div>
-                    <label for="Observaciones">Observaciones</label>
-                    <textarea id="Observaciones" name="Observaciones"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Registrar expediente</button>
+                    <button type="submit">Generar Factura</button>
                 </div>
             </form>
         </div>
@@ -126,8 +115,12 @@
             <a href="/">Home</a>
         </div>
 
+        <div class="top-left2">
+            <a href="/ventas">Ventas</a>
         </div>
+
     </div>
+</div>
 </div>
 </body>
 </html>

@@ -49361,8 +49361,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Documents\UCAB\Base de Datos\Proyecto\Entrega 2\Proyecto BD\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\Documents\UCAB\Base de Datos\Proyecto\Entrega 2\Proyecto BD\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\Documents\UCAB\Base de Datos\Proyecto\Entrega 2\BDFrontend\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Documents\UCAB\Base de Datos\Proyecto\Entrega 2\BDFrontend\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

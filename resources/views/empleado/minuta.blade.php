@@ -52,32 +52,34 @@
         }
 
         .title {
-            font-size: 84px;
+            font-size: 35px;
         }
 
-        .links  a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
 
         .m-b-md {
             margin-bottom: 30px;
         }
 
-        li{
+        input, select, textarea, button{
             color: #636b6f;
-            padding: 5px 50px;
+            padding: 0 25px;
             font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;;
+        }
+
+        .top-left2 a {
+            position: absolute;
+            left: 190px;
+            top: 5px;
+            color: #636b6f;
+            padding: 0 25px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
-            list-style-type:none;
+            font-size: 30px;
         }
     </style>
 </head>
@@ -86,20 +88,40 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Control de Empleados
+            <form method="post">
+                <div>
+                    <label for="id_minuta">ID Minuta</label>
+                    <input type="number" id="id_minuta" name="id_minuta">
+                </div>
+                <div>
+                    <label for="id_empleado">ID Empleado</label>
+                    <input type="number" id="id_empleado" name="id_empleado">
+                </div>
+                <div>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+                <div>
+                    <label for="Observaciones">Observaciones: </label>
+                    <textarea id="Observaciones" name="Observaciones"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Registrar Minuta</button>
+                </div>
+            </form>
         </div>
 
         <div class="top-left">
             <a href="/">Home</a>
         </div>
 
-        <div class="links">
-            <ul><li><a href="expediente">Crear Expediente</a></li>
-                <li><a href="minuta">Registrar Minuta</a></li>
-                <li><a href="turnoHornero">Crear turnos para horneros</a></li>
-            </ul>
+        <div class="top-left2">
+            <a href="/empleados">Empleados</a>
         </div>
+
+
     </div>
+</div>
 </div>
 </body>
 </html>
