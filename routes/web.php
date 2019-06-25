@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/empleados', function () {
+    return view('/empleado/empleados');
+});
+
+Route::get('/catalogo', function () {
+    return view('/catalogo/catalogo');
+});
+
+Route::get('/clientes', function () {
+    return view('/clientes/clientes');
+});
+
+Route::get('/crearexp', function () {
+    return view('/empleado/crearexp');
+});
