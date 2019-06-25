@@ -90,6 +90,7 @@ create table contrato(
     descuento numeric(2)not null ,
     id_cliente numeric(2)not null,
     constraint c_descuento check (descuento between 1 AND 50),
+    constraing pk_contrato primary key(id,id_cliente),
     constraint fk_id_cliente foreign key (id_cliente) references clientes(id)
 );
 
