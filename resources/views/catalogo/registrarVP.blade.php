@@ -90,6 +90,7 @@
                 </div>
                 <div>
                     <button type="submit">Registrar VP</button>
+                    <input type="button" onclick="window.location.href='http://127.0.0.1:8000';" value="Salir">
                 </div>
             </form>
         </div>

@@ -34,19 +34,6 @@
             position: relative;
         }
 
-        .top-left a {
-            position: absolute;
-            left: 5px;
-            top: 5px;
-            color: #636b6f;
-            padding: 0 25px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 30px;
-        }
-
         .content {
             text-align: center;
         }
@@ -69,18 +56,6 @@
             text-decoration: none;;
         }
 
-        .top-left2 a {
-            position: absolute;
-            left: 190px;
-            top: 5px;
-            color: #636b6f;
-            padding: 0 25px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 30px;
-        }
     </style>
 </head>
 <body>
@@ -90,36 +65,27 @@
         <div class="title m-b-md">
             <form action="" method="post">
                 <div>
-                    <label for="id">ID Reunion</label>
-                    <input type="number" id="id_minuta" name="">
-                </div>
-                <div>
-                    <label for="fecha">Fecha: </label>
-                    <input type="date" id="fecha" name="">
-                </div>
-                <div>
-                    <label for="id_empleado">ID Empleado:</label>
+                    <label for="id_empleado">ID Empleado que falto:</label>
                     <input type="number" id="id_empleado" name="">
                 </div>
                 <div>
-                    <label for="Observaciones">Observaciones: </label>
-                    <textarea id="Observaciones" name="Observaciones"></textarea>
+                    <label for="id_reunion">ID Reunion: </label>
+                    <input type="number" id="id_reunion" name="">
                 </div>
                 <div>
-                    <button type="submit">Registrar Minuta</button>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="">
+                </div>
+                <div>
+                    <label for="id_reunionemp">ID Supervisor:</label>
+                    <input type="number" id="id_reunionemp" name="">
+                </div>
+                <div>
+                    <button type="submit">Registrar Inasistencia</button>
+                    <input type="button" onclick="window.location.href='http://127.0.0.1:8000';" value="Salir">
                 </div>
             </form>
         </div>
-
-        <div class="top-left">
-            <a href="/">Home</a>
-        </div>
-
-        <div class="top-left2">
-            <a href="/empleados">Empleados</a>
-        </div>
-
-
     </div>
 </div>
 </div>

@@ -90,3 +90,7 @@ Route::get('/registrarVP', function () {
 Route::get('/success', function () {
     return view('/registroSuccess');
 });
+
+Route::get('/inasistenciaMinuta', function () {
+    return view('/empleado/inasistenciaMinuta');
+});
