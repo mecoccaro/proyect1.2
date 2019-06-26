@@ -78,18 +78,18 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('ClientesController@crearCliente') }}">
                 <div>
                     <label for="id">ID Cliente:</label>
-                    <input type="number" id="id" name="">
+                    <input type="number" id="id" name="id">
                 </div>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="">
+                    <input type="text" id="nombre" name="nombre">
                 </div>
                 <div>
                     <label for="pais">Pais:</label>
-                    <select>
+                    <select name="paisub">
                         <option value="Venezuela">Venezuela</option>
                         <option value="Colombia">Colombia</option>
                         <option value="Republica dominicana">Republica Dominicana</option>

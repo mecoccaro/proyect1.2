@@ -78,22 +78,22 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('ClientesController@pedido') }}">
                 <div>
                     <label for="id">ID Pedido:</label>
-                    <input type="number" id="id" name="">
+                    <input type="number" id="id" name="id">
                 </div>
                 <div>
                     <label for="fechaPedido">Fecha Pedido:</label>
-                    <input type="date" id="fechaPedido" name="">
+                    <input type="date" id="fechaPedido" name="fechapedido">
                 </div>
                 <div>
                     <label for="fechaEntrega">Fecha Entrega:</label>
-                    <input type="date" id="fechaEntrega" name="">
+                    <input type="date" id="fechaEntrega" name="fechaentrega">
                 </div>
                 <div>
                     <label for="id_cliente">ID Cliente:</label>
-                    <input type="number" id="id_cliente" name="">
+                    <input type="number" id="id_cliente" name="id_cliente">
                 </div>
                 <div>
                     <button type="submit">Generar Pedido</button>

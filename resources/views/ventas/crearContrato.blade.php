@@ -78,22 +78,22 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('ClientesController@contrato') }}">
                 <div>
                     <label for="id_contrato">ID Contrato:</label>
-                    <input type="number" id="id_contrato" name="">
+                    <input type="number" id="id_contrato" name="id">
                 </div>
                 <div>
                     <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha" name="">
+                    <input type="date" id="fecha" name="fecha">
                 </div>
                 <div>
                     <label for="descuento">Descuento:</label>
-                    <input type="number" id="descuento" name="">
+                    <input type="number" id="descuento" name="descuento">
                 </div>
                 <div>
                     <label for="id_cliente">ID Cliente: </label>
-                    <input type="number" id="id_cliente" name="">
+                    <input type="number" id="id_cliente" name="id_cliente">
                 </div>
                 <div>
                     <button type="submit">Registrar Contrato</button>

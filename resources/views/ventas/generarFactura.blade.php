@@ -78,22 +78,22 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('ClientesController@factura') }}">
                 <div>
                     <label for="num">Numero de Factura:</label>
-                    <input type="number" id="num" name="">
+                    <input type="number" id="num" name="numfactura">
                 </div>
                 <div>
                     <label for="fecha">Fecha Emision:</label>
-                    <input type="date" id="fecha" name="">
+                    <input type="date" id="fecha" name="fechaemision">
                 </div>
                 <div>
                     <label for="total">Total:</label>
-                    <input type="number" id="total" name="">
+                    <input type="number" id="total" name="total">
                 </div>
                 <div>
                     <label for="id_pedido">ID Pedido:</label>
-                    <input type="number" id="id_pedido" name="">
+                    <input type="number" id="id_pedido" name="id_pedido">
                 </div>
                 <div>
                     <button type="submit">Generar Factura</button>
