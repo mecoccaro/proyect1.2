@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Control de Empresa</title>
+    <title>Vajilla_Pieza</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -30,44 +30,63 @@
         .position-ref {
             position: relative;
         }
-        .top-left {
+        .top-left a {
             position: absolute;
             left: 5px;
             top: 5px;
+            color: #636b6f;
+            padding: 0 25px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 30px;
         }
         .content {
             text-align: center;
         }
         .title {
-            font-size: 84px;
-        }
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
+            font-size: 35px;
         }
         .m-b-md {
             margin-bottom: 30px;
         }
+        input, select, textarea, button{
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;;
+        }
     </style>
 </head>
 <body>
+
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Control de empresa
-        </div>
-
-        <div class="links">
-            <a href="empleados">Empleados</a>
-            <a href="catalogo">Catalogo</a>
-            <a href="ventas">Ventas</a>
+            <form action="" method="post">
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="">
+                </div>
+                <div>
+                    <label for="id_pieza">ID Pieza:</label>
+                    <input type="number" id="id_pieza" name="">
+                </div>
+                <div>
+                    <label for="id_vajilla">ID Vajilla:</label>
+                    <input type="number" id="id_vajilla" name="">
+                </div>
+                <div>
+                    <button type="submit">Registrar VP</button>
+                    <input type="button" onclick="window.location.href='http://127.0.0.1:8000';" value="Salir">
+                </div>
+            </form>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

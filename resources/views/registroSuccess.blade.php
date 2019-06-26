@@ -30,11 +30,6 @@
         .position-ref {
             position: relative;
         }
-        .top-left {
-            position: absolute;
-            left: 5px;
-            top: 5px;
-        }
         .content {
             text-align: center;
         }
@@ -59,13 +54,11 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            Control de empresa
+            Registro Satisfactorio
         </div>
 
         <div class="links">
-            <a href="empleados">Empleados</a>
-            <a href="catalogo">Catalogo</a>
-            <a href="ventas">Ventas</a>
+            <a href="/">Volver a la pagina principal</a>
         </div>
     </div>
 </div>
