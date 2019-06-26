@@ -54,22 +54,22 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form method="post" >
+            <form method="post" action="{{ action('EmpleadosController@inasistencia') }}">
                 <div>
                     <label for="id_empleado">ID Empleado que falto:</label>
-                    <input type="number" id="id_empleado" name="">
+                    <input type="number" id="id_empleado" name="id_empleado">
                 </div>
                 <div>
                     <label for="id_reunion">ID Reunion: </label>
-                    <input type="number" id="id_reunion" name="">
+                    <input type="number" id="id_reunion" name="id_reunion">
                 </div>
                 <div>
                     <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha" name="">
+                    <input type="date" id="fecha" name="id_reunionfecha">
                 </div>
                 <div>
                     <label for="id_reunionemp">ID Supervisor:</label>
-                    <input type="number" id="id_reunionemp" name="">
+                    <input type="number" id="id_reunionemp" name="id_reunionemp">
                 </div>
                 <div>
                     <button type="submit">Registrar Inasistencia</button>

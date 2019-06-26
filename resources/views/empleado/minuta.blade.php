@@ -78,22 +78,22 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('EmpleadosController@crearMinuta') }}">
                 <div>
                     <label for="id">ID Reunion</label>
-                    <input type="number" id="id_minuta" name="">
+                    <input type="number" id="id_minuta" name="id">
                 </div>
                 <div>
                     <label for="fecha">Fecha: </label>
-                    <input type="date" id="fecha" name="">
+                    <input type="date" id="fecha" name="fecha">
                 </div>
                 <div>
                     <label for="id_empleado">ID Empleado:</label>
-                    <input type="number" id="id_empleado" name="">
+                    <input type="number" id="id_empleado" name="id_empleado">
                 </div>
                 <div>
                     <label for="Observaciones">Observaciones: </label>
-                    <textarea id="Observaciones" name="Observaciones"></textarea>
+                    <textarea id="Observaciones" name="obserminuta"></textarea>
                 </div>
                 <div>
                     <button type="submit">Registrar Minuta</button>
