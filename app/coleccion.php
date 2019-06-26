@@ -8,4 +8,5 @@ class coleccion extends Model
 {
     protected $table ='coleccion';
     public $timestamps = false;
+
 }

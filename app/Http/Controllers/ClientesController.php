@@ -2,46 +2,84 @@
 
 namespace App\Http\Controllers;
 
+use App\Cliente;
+use App\contrato;
+use App\factura;
+use App\pedido;
+use App\User;
+use DemeterChain\A;
 use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Facades\Redirect;
+use Carbon\Carbon;
 
 class ClientesController extends Controller
 {
 
+
     public function index()
     {
         $clientes = DB::select('select * from clientes');
+        return response()
+            ->json($clientes);
     }
 
 
-    public function create()
-    {
-        //
-    }
 
-
-    public function store(Request $request)
+    public function crearCliente(Request $request)
     {
-        $clientes = new Cliente;
+        $clientes = new Cliente();
         $clientes->id=$request->get('id');
         $clientes->nombre=$request->get('nombre');
         $clientes->paisub=$request->get('paisub');
         $clientes->save();
 
-        return Redirect::back();
+        return response()->json('success');
+    }
+
+    public function pedido(Request $request,$id)
+    {
+
+        $pedido = new pedido();
+        $pedido->id=$request->get('id');
+        $pedido->id_cliente=$request->get('id_cliente');
+        $pedido->fechapedido=$request->get('fechapedido');
+        //$pedido->fechaentrega=$d;
+
+        $pedido->save();
+        return response()->json('success');
+    }
+
+    public function contrato(Request $request)
+    {
+        $contrato = new contrato();
+        $contrato->id=$request->get('id');
+        $contrato->id_cliente=$request->get('id_cliente');
+        $contrato->fecha=$request->get('fecha');
+        $contrato->descuento=$request->get('descuento');
+
+        $contrato->save();
+
+        return response()->json('success');
+    }
+
+    public function factura(Request $request)
+    {
+        $factura = new factura();
+        $factura->numfactura=$request->get('numfactura');
+        $factura->fechaemision=$request->get('fechaemision');
+
+        //$calculo = new
+        //$factura->total=$request->get('total');
     }
 
 
     public function show($id)
     {
-        $clientes = Cliente::find($id);
-    }
+        $clientes = DB::select('select c.nombre,c.paisub from clientes c where c.id = ?', [$id]);
 
-
-    public function edit($id)
-    {
-
+        return response()
+            ->json([$clientes]);
     }
 
 
@@ -53,14 +91,14 @@ class ClientesController extends Controller
         $clientes->paisub=$request->get('paisub');
         $clientes->save();
 
-        return Redirect::back();
+        return response()->json('Actualizado');
     }
 
 
     public function destroy($id)
     {
-        $clientes=Cliente::find($id);
+        $clientes = User::findorfail($id);
         $clientes->delete();
-        return Redirect::back();
+        return response()->json('Eliminado');
     }
 }

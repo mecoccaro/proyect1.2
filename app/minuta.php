@@ -8,4 +8,5 @@ class minuta extends Model
 {
     protected $table = 'reunion';
     public $timestamps = false;
+
 }

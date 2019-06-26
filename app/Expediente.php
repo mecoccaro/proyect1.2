@@ -8,4 +8,5 @@ class Expediente extends Model
 {
     protected $table = 'detalle_exp';
     public $timestamps = false;
+
 }

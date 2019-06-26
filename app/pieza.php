@@ -8,4 +8,5 @@ class pieza extends Model
 {
     protected $table = 'pieza';
     public $timestamps = false;
+
 }
