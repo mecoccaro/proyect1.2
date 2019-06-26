@@ -29,9 +29,9 @@ class ClientesController extends Controller
     public function crearCliente(Request $request)
     {
         $clientes = new Cliente();
-        $clientes->id=$request->get('id');
-        $clientes->nombre=$request->get('nombre');
-        $clientes->paisub=$request->get('paisub');
+        $clientes->id=$request->input('id');
+        $clientes->nombre=$request->input('nombre');
+        $clientes->paisub=$request->input('paisub');
         $clientes->save();
 
         return response()->json('success');
@@ -41,9 +41,9 @@ class ClientesController extends Controller
     {
 
         $pedido = new pedido();
-        $pedido->id=$request->get('id');
-        $pedido->id_cliente=$request->get('id_cliente');
-        $pedido->fechapedido=$request->get('fechapedido');
+        $pedido->id=$request->input('id');
+        $pedido->id_cliente=$request->input('id_cliente');
+        $pedido->fechapedido=$request->input('fechapedido');
         //$pedido->fechaentrega=$d;
 
         $pedido->save();
@@ -53,10 +53,10 @@ class ClientesController extends Controller
     public function contrato(Request $request)
     {
         $contrato = new contrato();
-        $contrato->id=$request->get('id');
-        $contrato->id_cliente=$request->get('id_cliente');
-        $contrato->fecha=$request->get('fecha');
-        $contrato->descuento=$request->get('descuento');
+        $contrato->id=$request->input('id');
+        $contrato->id_cliente=$request->input('id_cliente');
+        $contrato->fecha=$request->input('fecha');
+        $contrato->descuento=$request->input('descuento');
 
         $contrato->save();
 
@@ -66,8 +66,8 @@ class ClientesController extends Controller
     public function factura(Request $request)
     {
         $factura = new factura();
-        $factura->numfactura=$request->get('numfactura');
-        $factura->fechaemision=$request->get('fechaemision');
+        $factura->numfactura=$request->input('numfactura');
+        $factura->fechaemision=$request->input('fechaemision');
 
         //$calculo = new
         //$factura->total=$request->get('total');
@@ -86,9 +86,9 @@ class ClientesController extends Controller
     public function update(Request $request, $id)
     {
         $clientes=Cliente::find($id);
-        $clientes->id=$request->get('id');
-        $clientes->nombre=$request->get('nombre');
-        $clientes->paisub=$request->get('paisub');
+        $clientes->id=$request->input('id');
+        $clientes->nombre=$request->input('nombre');
+        $clientes->paisub=$request->input('paisub');
         $clientes->save();
 
         return response()->json('Actualizado');

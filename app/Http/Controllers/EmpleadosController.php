@@ -86,18 +86,18 @@ class EmpleadosController extends Controller
     public function CrearExpediente(Request $request)
     {
         $detalle_exp = new Expediente();
-        $detalle_exp->id=$request->get('id');
-        $detalle_exp->id_empleado=$request->get('id_empleado');
-        $detalle_exp->fechainicio=$request->get('fechainicio');
-        $detalle_exp->motivo=$request->get('motivo');
-        $detalle_exp->retrasos=$request->get('retrasos');
-        $detalle_exp->monto=$request->get('monto');
-        $detalle_exp->totalhrsextradia=$request->get('totalhrsextradia');
-        $detalle_exp->observaciones=$request->get('observaciones');
+        $detalle_exp->id=$request->input('id');
+        $detalle_exp->id_empleado=$request->input('id_empleado');
+        $detalle_exp->fechainicio=$request->input('fechainicio');
+        $detalle_exp->motivo=$request->input('motivo');
+        $detalle_exp->retrasos=$request->input('retrasos');
+        $detalle_exp->monto=$request->input('monto');
+        $detalle_exp->totalhrsextradia=$request->input('totalhrsextradia');
+        $detalle_exp->observaciones=$request->input('observaciones');
 
         $detalle_exp->save();
 
-        return response()->json('Success');
+        return Redirect::back();
     }
 
     public function ActualizarExp(Request $request,$id){
@@ -105,12 +105,12 @@ class EmpleadosController extends Controller
         $detalle_exp = Expediente::findorfail($id);
         $detalle_exp->id=$id;
         $detalle_exp->id_empleado=$request->input('id_empleado');
-        $detalle_exp->fechainicio=$request->get('fechainicio');
-        $detalle_exp->motivo=$request->get('motivo');
-        $detalle_exp->retrasos=$request->get('retrasos');
-        $detalle_exp->monto=$request->get('monto');
-        $detalle_exp->totalhrsextradia=$request->get('totalhrsextradia');
-        $detalle_exp->observaciones=$request->get('observaciones');
+        $detalle_exp->fechainicio=$request->input('fechainicio');
+        $detalle_exp->motivo=$request->input('motivo');
+        $detalle_exp->retrasos=$request->input('retrasos');
+        $detalle_exp->monto=$request->input('monto');
+        $detalle_exp->totalhrsextradia=$request->input('totalhrsextradia');
+        $detalle_exp->observaciones=$request->input('observaciones');
 
         $detalle_exp->save();
         return response()->json('Success');
@@ -119,10 +119,10 @@ class EmpleadosController extends Controller
     public function crearMinuta(Request $request)
     {
         $reunion = new minuta();
-        $reunion->id=$request->get('id');
-        $reunion->id_empleado=$request->get('id_empleado');
-        $reunion->fecha=$request->get('fecha');
-        $reunion->obserminuta=$request->get('obserminuta');
+        $reunion->id=$request->input('id');
+        $reunion->id_empleado=$request->input('id_empleado');
+        $reunion->fecha=$request->input('fecha');
+        $reunion->obserminuta=$request->input('obserminuta');
 
         $reunion->save();
 
@@ -132,10 +132,10 @@ class EmpleadosController extends Controller
     public function inasistencia(Request $request)
     {
         $inasistencia_reunion = new inasistencia();
-        $inasistencia_reunion->id_reunion=$request->get('id_reunion');
-        $inasistencia_reunion->id_reunionfecha=$request->get('id_reunionfecha');
-        $inasistencia_reunion->id_reunionemp=$request->get('id_reunionemp');
-        $inasistencia_reunion->id_empleado=$request->get('id_empleado');
+        $inasistencia_reunion->id_reunion=$request->input('id_reunion');
+        $inasistencia_reunion->id_reunionfecha=$request->input('id_reunionfecha');
+        $inasistencia_reunion->id_reunionemp=$request->input('id_reunionemp');
+        $inasistencia_reunion->id_empleado=$request->input('id_empleado');
 
         $inasistencia_reunion->save();
 
@@ -149,9 +149,9 @@ class EmpleadosController extends Controller
 
         ]);*/
         $hist_turno_men = new horneros();
-        $hist_turno_men->id_empleado=$request->get('id_empleado');
-        $hist_turno_men->fechainicio=$request->get('fechainicio');
-        $hist_turno_men->turno=$request->get('turno');
-        $hist_turno_men->fechafin=$request->get('fechafin');
+        $hist_turno_men->id_empleado=$request->input('id_empleado');
+        $hist_turno_men->fechainicio=$request->input('fechainicio');
+        $hist_turno_men->turno=$request->input('turno');
+        $hist_turno_men->fechafin=$request->input('fechafin');
     }
 }

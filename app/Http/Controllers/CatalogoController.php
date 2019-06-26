@@ -65,10 +65,10 @@ class CatalogoController extends Controller
     public function crearColeccion(Request $request)
     {
         $coleccion = new coleccion();
-        $coleccion->id=$request->get('id');
-        $coleccion->nombre=$request->get('nombre');
-        $coleccion->linea=$request->get('linea');
-        $coleccion->categoria=$request->get('categoria');
+        $coleccion->id=$request->input('id');
+        $coleccion->nombre=$request->input('nombre');
+        $coleccion->linea=$request->input('linea');
+        $coleccion->categoria=$request->input('categoria');
 
         $coleccion->save();
 
@@ -78,10 +78,10 @@ class CatalogoController extends Controller
     public function crearPieza(Request $request)
     {
         $pieza = new pieza();
-        $pieza->id=$request->get('id');
-        $pieza->id_coleccion=$request->get('id_coleccion');
-        $pieza->id_molde=$request->get('id_molde');
-        $pieza->descripcion=$request->get('descripcion');
+        $pieza->id=$request->input('id');
+        $pieza->id_coleccion=$request->input('id_coleccion');
+        $pieza->id_molde=$request->input('id_molde');
+        $pieza->descripcion=$request->input('descripcion');
 
         $pieza->save();
 
@@ -91,10 +91,10 @@ class CatalogoController extends Controller
     public function crearVajilla(Request $request)
     {
         $vajilla = new vajilla();
-        $vajilla->id=$request->get('id');
-        $vajilla->nombre=$request->get('nombre');
-        $vajilla->numpers=$request->get('numpers');
-        $vajilla->descripcion=$request->get('descripcion');
+        $vajilla->id=$request->input('id');
+        $vajilla->nombre=$request->input('nombre');
+        $vajilla->numpers=$request->input('numpers');
+        $vajilla->descripcion=$request->input('descripcion');
 
         $vajilla->save();
 
@@ -104,9 +104,9 @@ class CatalogoController extends Controller
     public function llenarVP(Request $request)
     {
         $v_p = new vp();
-        $v_p->id_vajilla=$request->get('id_vajilla');
-        $v_p->id_pieza=$request->get('id_pieza');
-        $v_p->cantidad=$request->get('cantidad');
+        $v_p->id_vajilla=$request->input('id_vajilla');
+        $v_p->id_pieza=$request->input('id_pieza');
+        $v_p->cantidad=$request->input('cantidad');
 
         $v_p->save();
 
