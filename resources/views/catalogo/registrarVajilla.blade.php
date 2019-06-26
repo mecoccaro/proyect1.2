@@ -78,18 +78,18 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('CatalogoController@crearVajilla') }}">
                 <div>
                     <label for="id_vajilla">ID Vajilla:</label>
-                    <input type="number" id="id_vajilla" name="">
+                    <input type="number" id="id_vajilla" name="id">
                 </div>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="">
+                    <input type="text" id="nombre" name="nombre">
                 </div>
                 <div>
                     <label for="personas">Numero de Personas:</label>
-                    <select>
+                    <select name="numpers">
                         <option value=1>1</option>
                         <option value=2>2</option>
                         <option value=3>3</option>
@@ -101,7 +101,7 @@
                 </div>
                 <div>
                     <label for="descripcion">Descripcion: </label>
-                    <textarea id="descripcion" name=""></textarea>
+                    <textarea id="descripcion" name="descripcion"></textarea>
                 </div>
                 <div>
                     <button type="submit">Registrar Vajilla</button>

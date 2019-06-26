@@ -66,18 +66,18 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('CatalogoController@llenarVP') }}">
                 <div>
                     <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="">
+                    <input type="number" id="cantidad" name="cantidad">
                 </div>
                 <div>
                     <label for="id_pieza">ID Pieza:</label>
-                    <input type="number" id="id_pieza" name="">
+                    <input type="number" id="id_pieza" name="id_pieza">
                 </div>
                 <div>
                     <label for="id_vajilla">ID Vajilla:</label>
-                    <input type="number" id="id_vajilla" name="">
+                    <input type="number" id="id_vajilla" name="id_vajilla">
                 </div>
                 <div>
                     <button type="submit">Registrar VP</button>
