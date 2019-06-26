@@ -54,7 +54,7 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" >
                 <div>
                     <label for="id_empleado">ID Empleado que falto:</label>
                     <input type="number" id="id_empleado" name="">

@@ -90,33 +90,34 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form method="post">
+            <form method="post" action="{{ action('EmpleadosController@CrearExpediente') }}">
+                <div>
+                    <label for="id_expediente">Numero de Expediente</label>
+                    <input type="number" id="id_expediente" name="id">
+                </div>
                 <div>
                     <label for="id_empleado">ID Empleado</label>
                     <input type="number" id="id_empleado" name="id_empleado">
                 </div>
                 <div>
-                    <label for="id_expediente">Numero de Expediente</label>
-                    <input type="number" id="id_expediente" name="id_expediente">
-                </div>
-                <div>
                     <label for="fechaInic">Fecha de Inicio: </label>
-                    <input type="date" id="fechaInic" name="fechaInic">
-                </div>
-                <div>
-                    <label for="monto">Monto:</label>
-                    <input type="number" id="monto" name="monto">
+                    <input type="date" id="fechaInic" name="fechainicio">
                 </div>
                 <div>
                     <label for="motivo">Motivo:</label>
-                    <select>
+                    <select name="motivo">
                         <option value="Bono mes">Bono Mes</option>
                         <option value="Bono anual">Bono anual</option>
                     </select>
                 </div>
                 <div>
+                    <label for="monto">Monto:</label>
+                    <input type="number" id="monto" name="monto">
+                </div>
+
+                <div>
                     <label for="Observaciones">Observaciones</label>
-                    <textarea id="Observaciones" name="Observaciones"></textarea>
+                    <textarea id="Observaciones" name="observaciones"></textarea>
                 </div>
                 <div>
                     <button type="submit">Registrar expediente</button>
