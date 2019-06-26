@@ -78,22 +78,22 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form action="" method="post">
+            <form method="post" action="{{ action('CatalogoController@crearPieza') }}">
                 <div>
                     <label for="id_pieza">ID Pieza:</label>
-                    <input type="number" id="id_pieza" name="">
+                    <input type="number" id="id_pieza" name="id">
                 </div>
                 <div>
                     <label for="id_Coleccion">ID Coleccion:</label>
-                    <input type="number" id="id_Coleccion" name="">
+                    <input type="number" id="id_Coleccion" name="id_coleccion">
                 </div>
                 <div>
                     <label for="id_molde">ID Molde:</label>
-                    <input type="number" id="id_molde" name="">
+                    <input type="number" id="id_molde" name="id_molde">
                 </div>
                 <div>
                     <label for="descripcion">Descripcion: </label>
-                    <textarea id="descripcion" name=""></textarea>
+                    <textarea id="descripcion" name="descripcion"></textarea>
                 </div>
                 <div>
                     <button type="submit">Registrar Pieza</button>
