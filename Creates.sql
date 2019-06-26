@@ -104,7 +104,7 @@ create table pedido(
 );
 
 create table factura(
-    numFactura numeric(4) not null ,
+    numFactura numeric(4) primary key ,
     fechaEmision date not null ,
     total numeric(15) not null,
     id_pedido numeric(2)not null ,
