@@ -78,14 +78,18 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form method="post">
+            <form method="post" action="{{ action('EmpleadosController@turnos') }}">
                 <div>
                     <label for="fechaInic">Fecha de Inicio: </label>
-                    <input type="date" id="fechaInic" name="fechaInic">
+                    <input type="date" id="fechaInic" name="fechainicio">
                 </div>
                 <div>
                     <label for="turno">Turno:</label>
-                    <input type="number" id="turno" name="turno">
+                    <select name="turno">
+                        <option value=1>Turno 1</option>
+                        <option value=1>Turno 2</option>
+                        <option value=1>Turno 3</option>
+                    </select>
                 </div>
                 <div>
                     <label for="id_empleado">ID Empleado:</label>
@@ -93,7 +97,7 @@
                 </div>
                 <div>
                     <label for="fechaFin">Fecha de Culminacion: </label>
-                    <input type="date" id="fechaFin" name="fechaFin">
+                    <input type="date" id="fechaFin" name="fechafin">
                 </div>
                 <div>
                     <button type="submit">Registrar Turno</button>
