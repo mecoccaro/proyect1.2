@@ -34,10 +34,8 @@
             position: absolute;
             left: 5px;
             top: 5px;
-            ext-transform: uppercase;
             color: #636b6f;
             padding: 0 25px;
-            font-size: 13px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;
@@ -80,10 +78,10 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div class="title m-b-md">
-            <form method="post">
+            <form method="post" action="{{ action('CatalogoController@crearColeccion') }}">
                 <div>
                     <label for="id_coleccion">ID Coleccion:</label>
-                    <input type="number" id="id_empleado" name="id_empleado">
+                    <input type="number" id="id_empleado" name="id">
                 </div>
                 <div>
                     <label for="nombre">Nombre:</label>
@@ -91,14 +89,14 @@
                 </div>
                 <div>
                     <label for="linea">Linea:</label>
-                    <select>
+                    <select name="linea">
                         <option value="Familiar">Familiar</option>
                         <option value="Institucional">Institucional</option>
                     </select>
                 </div>
                 <div>
-                    <label for="coleccion">Coleccion:</label>
-                    <select>
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria">
                         <option value="Clasica">Clasica</option>
                         <option value="Country">Country</option>
                         <option value="Moderna">Moderna</option>
