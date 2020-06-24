@@ -1,0 +1,755 @@
+INSERT INTO molde(id,tipo,volumen) values(1,'Jarra',1);
+INSERT INTO molde(id,tipo,volumen) values(2,'Jarra',1.5);
+INSERT INTO molde(id,tipo,cantPers) values(3,'Tetera',6);
+INSERT INTO molde(id,tipo,cantPers)	values(4,'Tetera',2);
+INSERT INTO molde(id,tipo,cantPers) values(5,'Lechera',6);
+INSERT INTO molde(id,tipo,cantPers) values(6,'Lechera',2);
+INSERT INTO molde(id,tipo,cantPers) values(7,'Azucarera',6);
+INSERT INTO molde(id,tipo,tipoTaza) values(8,'Taza','Te con plato');
+INSERT INTO molde(id,tipo,tipoTaza) values(9,'Taza','Cafe con plato');
+INSERT INTO molde(id,tipo,tipoTaza) values(10,'Taza','Moka con plato');
+INSERT INTO molde(id,tipo,tipoTaza)	values(11,'Taza','Moka sin plato');
+INSERT INTO molde(id,tipo,tamano) values(12,'Cazuela',19*12);
+INSERT INTO molde(id,tipo,tamano,forma) values(13,'Bandeja',44*22,'ovalada');
+INSERT INTO molde(id,tipo,tamano,forma) values(14,'Bandeja',35*18,'ovalada');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(15,'Plato','Hondo',24,'redondo');
+INSERT INTO molde(id,tipo,tamano) values(16,'Ensaladera',38*22);
+INSERT INTO molde(id,tipo,tamano) values(17,'Ensaladera',30*18);
+INSERT INTO molde(id,tipo,tamano) values(18,'Cazuela',7*6);
+INSERT INTO molde(id,tipo,tipoPlato,tamano) values(19,'Plato','Taza Moka',14*1);
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(20,'Plato','Llano',27*27,'redondo');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(21,'Plato','Postre',23*23,'redondo,');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(22,'Plato','Presentacion',35*35,'redondo');
+INSERT INTO molde(id,tipo,tamano) values(23,'Cazuela',47*38);
+INSERT INTO molde(id,tipo,tamano) values(24,'Cazuela',26*20);
+INSERT INTO molde(id,tipo,tamano) values(25,'Cazuela',28*5);
+INSERT INTO molde(id,tipo,tipoPlato,tamano) values(26,'Plato','Pasta',28*28);
+
+INSERT INTO molde(id,tipo,tamano,forma) values(27,'Bandeja',44*22,'rectangular');
+INSERT INTO molde(id,tipo,tamano,forma) values(28,'Bandeja',35*18,'rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(29,'Plato','Hondo',24,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(30,'Plato','Llano',27*27,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(31,'Plato','Postre',23*23,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(32,'Plato','Presentacion',35*35,'cuadrado');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(33,'Plato','Llano',27*27,'rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(34,'Plato','Postre',23*23,'rectangular');
+INSERT INTO molde(id,tipo,tipoPlato,tamano,forma) values(35,'Plato','Presentacion',35*35,'rectangular');
+
+
+INSERT INTO coleccion values(1,'Lineal Naranja','Familiar','Clasica');
+INSERT INTO coleccion values(2,'Campina Francesa','Familiar','Country');
+INSERT INTO coleccion values(3,'Country Rosa','Institucional','Country');
+INSERT INTO coleccion values(4,'Era Moderna','Familiar','Moderna');
+INSERT INTO coleccion values(5,'Ondas Suaves','Familiar','Moderna');
+
+INSERT INTO coleccion values(6,'Floral','Familiar','Clasica');
+INSERT INTO coleccion values(7,'Amazonia Brasilera','Familiar','Clasica');
+INSERT INTO coleccion values(8,'Mimosas','Familiar','Country');
+INSERT INTO coleccion values(9,'Desayuno Campestre','Institucional','Country');
+INSERT INTO coleccion values(10,'Country Blanco','Institucional','Country');
+INSERT INTO coleccion values(11,'Country Azul','Institucional','Country');
+INSERT INTO coleccion values(12,'Lineal Cereza','Familiar','Clasica');
+INSERT INTO coleccion values(13,'Lineal Verde','Familiar','Clasica');
+INSERT INTO coleccion values(14,'Campina Inglesa','Familiar','Country');
+INSERT INTO coleccion values(15,'Floral Moderna','Familiar','Moderna');
+
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(1,1,3);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(2,1,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(3,1,5);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(4,1,8);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(5,1,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(6,1,11);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(7,1,33);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(8,1,34);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(9,1,35);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(10,1,28);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(11,1,16);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(12,2,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(13,2,17);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(14,2,21);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(15,2,24);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(16,2,14);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(17,2,1);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(18,2,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(19,2,10);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(20,2,32);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(21,2,25);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(22,3,5);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(23,3,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(24,3,2);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(25,3,16);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(26,3,17);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(27,3,27);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(28,3,20);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(29,3,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(30,3,15);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(31,3,18);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(32,3,21);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(33,4,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(34,4,18);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(35,4,1);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(36,4,19);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(37,4,9);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(38,4,15);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(39,4,33);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(40,4,35);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(41,5,13);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(42,5,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(43,5,30);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(44,5,31);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(45,5,4);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(46,5,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(47,5,6);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(48,5,8);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(49,5,2);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(50,5,3);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(51,5,5);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(52,5,7);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(53,5,14);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(54,6,23);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(55,6,26);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(56,6,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(57,7,21);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(58,7,22);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(59,7,23);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(60,7,26);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(61,8,16);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(62,8,12);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(63,9,20);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(64,9,21);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(65,9,22);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(66,10,8);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(67,10,9);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(68,11,1);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(69,12,4);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(70,12,6);
+
+INSERT INTO pieza(id,id_coleccion,id_molde) values(71,13,2);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(72,14,3);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(73,14,14);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(74,15,18);
+INSERT INTO pieza(id,id_coleccion,id_molde) values(75,15,24);
+
+INSERT INTO vajilla(id,nombre,numPers) values(1,'Set atardecer',6);
+INSERT INTO vajilla(id,nombre,numPers) values(2,'Set campestre',5);
+INSERT INTO vajilla(id,nombre,numPers) values(3,'Set amor',2);
+INSERT INTO vajilla(id,nombre,numPers) values(4,'Set cocina francesa',5);
+INSERT INTO vajilla(id,nombre,numPers) values(5,'Set orquideo',6);
+INSERT INTO vajilla(id,nombre,numPers) values(6,'Set bouquet',16);
+INSERT INTO vajilla(id,nombre,numPers) values(7,'Set futurista' ,3);
+INSERT INTO vajilla(id,nombre,numPers) values(8,'Set viajero',1);
+INSERT INTO vajilla(id,nombre,numPers) values(9,'Set vacacional',24);
+INSERT INTO vajilla(id,nombre,numPers) values(10,'Set tranquilidad',1);
+
+INSERT INTO v_p values(1,1,1);
+INSERT INTO v_p values(1,2,1);
+INSERT INTO v_p values(1,3,1);
+INSERT INTO v_p values(6,4,1);
+
+INSERT INTO v_p values(2,5,2);
+INSERT INTO v_p values(5,6,2);
+
+INSERT INTO v_p values(2,12,3);
+INSERT INTO v_p values(1,13,3);
+INSERT INTO v_p values(2,14,3);
+
+INSERT INTO v_p values(5,15,4);
+INSERT INTO v_p values(2,16,4);
+INSERT INTO v_p values(5,14,4);
+
+INSERT INTO v_p values(3,22,5);
+INSERT INTO v_p values(1,23,5);
+INSERT INTO v_p values(1,24,5);
+
+INSERT INTO v_p values(2,25,6);
+INSERT INTO v_p values(2,26,6);
+INSERT INTO v_p values(6,27,6);
+INSERT INTO v_p values(16,28,6);
+
+INSERT INTO v_p values(3,33,7);
+INSERT INTO v_p values(3,34,7);
+
+INSERT INTO v_p values(1,33,8);
+INSERT INTO v_p values(1,35,8);
+
+INSERT INTO v_p values(4,41,9);
+INSERT INTO v_p values(4,42,9);
+INSERT INTO v_p values(24,43,9);
+INSERT INTO v_p values(24,44,9);
+
+INSERT INTO v_p values(1,45,10);
+INSERT INTO v_p values(1,46,10);
+INSERT INTO v_p values(1,47,10);
+INSERT INTO v_p values(1,48,10);
+
+
+INSERT INTO historial_precio values('4-Mar-18','1-Jul-18',12000,1);
+INSERT INTO historial_precio values('1-Jul-18','1-Sep-18',44000,1);
+INSERT INTO historial_precio values('1-Sep-18','6-Jan-19',67000,1);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Jan-19',83000,1);
+INSERT INTO historial_precio values('7-Sep-18','4-Nov-18',23000,2);
+INSERT INTO historial_precio values('4-Nov-18','10-Jan-19',62400,2);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',66700,2);
+INSERT INTO historial_precio values('2-Aug-18','13-Oct-18',14000,3);
+INSERT INTO historial_precio values('13-Oct-18','12-Jan-19',32200,3);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('12-Jan-19',56200,3);
+INSERT INTO historial_precio values('3-Aug-18','1-Oct-18',13000,4);
+INSERT INTO historial_precio values('1-Oct-18','4-Jan-19',22400,4);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('4-Jan-19',46700,4);
+INSERT INTO historial_precio values('20-Sep-18','4-Nov-18',34000,5);
+INSERT INTO historial_precio values('4-Nov-18','14-Jan-19',72400,5);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('14-Jan-19',86700,5);
+INSERT INTO historial_precio values('24-Sep-18','1-Nov-18',11000,6);
+INSERT INTO historial_precio values('1-Nov-18','4-Jan-19',22400,6);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('4-Jan-19',35700,6);
+INSERT INTO historial_precio values('7-Sep-18','2-Nov-18',3000,7);
+INSERT INTO historial_precio values('2-Nov-18','6-Jan-19',10000,7);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Jan-19',16700,7);
+INSERT INTO historial_precio values('3-Sep-18','4-Nov-18',22000,8);
+INSERT INTO historial_precio values('4-Nov-18','9-Jan-19',32400,8);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('9-Jan-19',36750,8);
+INSERT INTO historial_precio values('7-Sep-18','4-Nov-18',3200,9);
+INSERT INTO historial_precio values('4-Nov-18','10-Jan-19',6400,9);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',10700,9);
+INSERT INTO historial_precio values('3-Aug-18','16-Oct-18',33000,10);
+INSERT INTO historial_precio values('16-Oct-18','7-Jan-19',55400,10);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Jan-19',69100,10);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',24500,11);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',20100,12);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',19900,13);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',29350,14);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',21000,15);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',20100,16);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',30250,17);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',13780,18);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',21300,19);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',30000,20);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Feb-19',12300,21);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Feb-19',22300,22);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Feb-19',11900,23);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Feb-19',29100,24);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('6-Feb-19',31000,25);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-May-19',15000,26);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-May-19',13000,27);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-May-19',21000,28);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-May-19',34000,29);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-May-19',19500,30);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('30-Mar-19',41000,31);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('30-Mar-19',36700,32);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('30-Mar-19',50500,33);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('30-Mar-19',34000,34);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('30-Mar-19',42300,35);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',42000,36);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',51000,37);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',41520,38);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',54200,39);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',39000,40);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Feb-19',24400,41);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Feb-19',23100,42);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Feb-19',45000,43);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Feb-19',23000,44);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Feb-19',36700,45);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Apr-19',45000,46);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Apr-19',54300,47);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Apr-19',39900,48);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Apr-19',42350,49);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Apr-19',39500,50);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-Mar-19',41200,51);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-Mar-19',39200,52);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-Mar-19',34200,53);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-Mar-19',50000,54);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('1-Mar-19',47750,55);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',24000,56);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',35000,57);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',31050,58);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',36200,59);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',26600,60);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('27-May-19',51500,61);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('27-May-19',63200,62);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('27-May-19',49700,63);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('28-May-19',47000,64);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('28-May-19',52300,65);
+INSERT INTO historial_precio values('6-Sep-18','4-Nov-18',3000,66);
+INSERT INTO historial_precio values('4-Nov-18','3-Jan-19',15400,66);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('3-Jan-19',39200,66);
+INSERT INTO historial_precio values('3-Nov-18','18-Jan-19',7250,67);
+INSERT INTO historial_precio values('18-Jan-19','7-Mar-19',12400,67);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('7-Mar-19',41500,67);
+INSERT INTO historial_precio values('1-Sep-18','14-Nov-18',7500,68);
+INSERT INTO historial_precio values('14-Nov-18','10-Jan-19',15400,68);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('10-Jan-19',37500,68);
+INSERT INTO historial_precio values('13-Sep-18','12-Nov-18',15000,69);
+INSERT INTO historial_precio values('12-Nov-18','13-Jan-19',35200,69);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('13-Jan-19',69900,69);
+INSERT INTO historial_precio values('29-Aug-18','30-Nov-18',12400,70);
+INSERT INTO historial_precio values('30-Nov-18','5-Jan-19',35400,70);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('5-Jan-19',53000,70);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',32000,71);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',65200,71);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',79400,71);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',27000,72);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',55400,72);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',69100,72);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',15000,73);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',30200,73);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',45520,73);
+INSERT INTO historial_precio values('3-Sep-18','1-Nov-18',26000,74);
+INSERT INTO historial_precio values('1-Nov-18','8-Jan-19',35400,74);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('8-Jan-19',42100,74);
+INSERT INTO historial_precio values('4-Sep-18','2-Nov-18',23000,75);
+INSERT INTO historial_precio values('2-Nov-18','4-Jan-19',29220,75);
+INSERT INTO historial_precio(fechaInicio,precioBs,id_pieza) values('4-Jan-19',49910,75);
+
+
+
+INSERT INTO diseno values(1,'plantas, animales','Motivo','Una mariposa posada sobre una flor');
+INSERT INTO diseno(id,nombre,tipo) values(2,'azul, blanco','Color');
+INSERT INTO diseno values(3,'paisajes, relieve','Motivo','Animales entre las montanas');
+INSERT INTO diseno(id,nombre,tipo) values(4,'amarillo, blanco','Color');
+INSERT INTO diseno(id,nombre,tipo) values(5,'relieve','Motivo');
+INSERT INTO diseno values(6,'plantas','Motivo','Flores rojas');
+INSERT INTO diseno values(7,'plantas, frutas','Motivo','Arbol de manzanas');
+INSERT INTO diseno(id,nombre,tipo) values(8,'plantas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(9,'plantas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(10,'plantas, frutas','Motivo');
+INSERT INTO diseno values(11,'anaranjado, blanco','Color','Lineas blancas y naranjas');
+INSERT INTO diseno values(12,'anaranjado','Color','Naranja intenso');
+INSERT INTO diseno(id,nombre,tipo) values(13,'superficie coloreada','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(14,'formas geometricas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(15,'anaranjado,negro','Color');
+INSERT INTO diseno values(16,'rojo, blanco','Color','Lineas rojas y blancas');
+INSERT INTO diseno values(17,'rojo','Color','Rojo intenso');
+INSERT INTO diseno(id,nombre,tipo) values(18,'superficie coloreada','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(19,'formas geometricas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(20,'rojo, dorado, negro','Color');
+INSERT INTO diseno values(21,'verde, blanco','Color','Lineas verdes y blancas');
+INSERT INTO diseno values(22,'verde','Color','Verde llamativo');
+INSERT INTO diseno(id,nombre,tipo) values(23,'superficie coloreada','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(24,'formas geometricas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(25,'verde, negro','Color');
+INSERT INTO diseno values(26,'paisajes','Motivo','Camino rural entre extensiones de terreno');
+INSERT INTO diseno values(27,'paisajes','Motivo','Casa al frente de un lago');
+INSERT INTO diseno(id,nombre,tipo) values(28,'paisajes','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(29,'paisajes, relieve','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(30,'relieve','Motivo');
+INSERT INTO diseno values(31,'paisajes','Motivo','Un gran viñedo');
+INSERT INTO diseno values(32,'paisajes','Motivo','Campos franceses');
+INSERT INTO diseno values(33,'paisajes','Motivo','Calles entre el pueblo');
+INSERT INTO diseno(id,nombre,tipo) values(34,'relieve','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(35,'paisajes','Motivo');
+INSERT INTO diseno values(36,'frutas','Motivo','Naranjas cortadas');
+INSERT INTO diseno values(37,'anaranjado','Color','Naranja mimosa');
+INSERT INTO diseno values(38,'bebidas','Motivo','Mimosa');
+INSERT INTO diseno(id,nombre,tipo) values(39,'superficie coloreada','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(40,'frutas','Motivo');
+INSERT INTO diseno values(41,'frutas','Motivo','Jugo de naranja natural');
+INSERT INTO diseno values(42,'comida','Motivo','Huevos y tocino');
+INSERT INTO diseno(id,nombre,tipo) values(43,'frutas, paisajes','Motivo');
+INSERT INTO diseno(id,nombre,tipo)	values(44,'paisajes, relieve','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(45,'comida, bebidas','Motivo');
+INSERT INTO diseno values(46,'formas geometricas','Motivo','Bloques blancos');
+INSERT INTO diseno values(47,'blanco, gris','Color','Paredes blancas y grises');
+INSERT INTO diseno(id,nombre,tipo) values(48,'blanco','Color');
+INSERT INTO diseno(id,nombre,tipo) values(49,'gris','Color');
+INSERT INTO diseno(id,nombre,tipo) values(50,'superficie coloreada','Motivo');
+INSERT INTO diseno values(51,'superficie coloreada','Motivo','Difuminado azul claro');
+INSERT INTO diseno values(52,'azul, blanco','Color','Cuadros blancos y azules');
+INSERT INTO diseno(id,nombre,tipo) values(53,'azul','Color');
+INSERT INTO diseno(id,nombre,tipo) values(54,'blanco','Color');
+INSERT INTO diseno(id,nombre,tipo) values(55,'formas geometricas','Motivo');
+INSERT INTO diseno values(56,'Plantas','Motivo','Ramo de rosas rosadas');
+INSERT INTO diseno values(57,'Plantas','Motivo','Dos rosas rosadas');
+INSERT INTO diseno(id,nombre,tipo) values(58,'rosado','Color');
+INSERT INTO diseno(id,nombre,tipo) values(59,'rosado, blanco','Color');
+INSERT INTO diseno(id,nombre,tipo) values(60,'rosado, negro','Color');
+INSERT INTO diseno values(61,'formas geometricas','Motivo','Semicircunferencias en los bordes');
+INSERT INTO diseno values(62,'formas geometricas','Motivo','Lineas onduladas simetricas');
+INSERT INTO diseno values(63,'formas geometricas','Motivo','Circunferencias alrededor de los bordes');
+INSERT INTO diseno(id,nombre,tipo) values(64,'blanco, negro','Color');
+INSERT INTO diseno(id,nombre,tipo) values(65,'negro, gris','Color');
+INSERT INTO diseno values(66,'formas geometricas','Motivo','Cuadros negros sobre superficie blanca');
+INSERT INTO diseno values(67,'formas geometricas','Motivo','Circunferencia en el borde y una linea tangente');
+INSERT INTO diseno(id,nombre,tipo) values(68,'formas geometricas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(69,'azul, blanco','Color');
+INSERT INTO diseno(id,nombre,tipo) values(70,'azul','Color');
+INSERT INTO diseno values(71,'Plantas','Motivo','Orquideas');
+INSERT INTO diseno values(72,'Plantas','Motivo','Flores en los bordes');
+INSERT INTO diseno values(73,'Plantas','Motivo','Petalos esparcidos');
+INSERT INTO diseno(id,nombre,tipo) values(74,'Plantas','Motivo');
+INSERT INTO diseno(id,nombre,tipo) values(75,'Verde','Color');
+
+
+INSERT INTO l_c values(1,1);
+INSERT INTO l_c values(1,2);
+INSERT INTO l_c values(1,3);
+INSERT INTO l_c values(1,4);
+INSERT INTO l_c values(1,5);
+INSERT INTO l_c values(2,6);
+INSERT INTO l_c values(2,7);
+INSERT INTO l_c values(2,8);
+INSERT INTO l_c values(2,9);
+INSERT INTO l_c values(2,10);
+INSERT INTO l_c values(3,11);
+INSERT INTO l_c values(3,12);
+INSERT INTO l_c values(3,13);
+INSERT INTO l_c values(3,14);
+INSERT INTO l_c values(3,15);
+INSERT INTO l_c values(4,16);
+INSERT INTO l_c values(4,17);
+INSERT INTO l_c values(4,18);
+INSERT INTO l_c values(4,19);
+INSERT INTO l_c values(4,20);
+INSERT INTO l_c values(5,21);
+INSERT INTO l_c values(5,22);
+INSERT INTO l_c values(5,23);
+INSERT INTO l_c values(5,24);
+INSERT INTO l_c values(5,25);
+INSERT INTO l_c values(6,26);
+INSERT INTO l_c values(6,27);
+INSERT INTO l_c values(6,28);
+INSERT INTO l_c values(6,29);
+INSERT INTO l_c values(6,30);
+INSERT INTO l_c values(7,31);
+INSERT INTO l_c values(7,32);
+INSERT INTO l_c values(7,33);
+INSERT INTO l_c values(7,34);
+INSERT INTO l_c values(7,35);
+INSERT INTO l_c values(8,36);
+INSERT INTO l_c values(8,37);
+INSERT INTO l_c values(8,38);
+INSERT INTO l_c values(8,39);
+INSERT INTO l_c values(8,40);
+INSERT INTO l_c values(9,41);
+INSERT INTO l_c values(9,42);
+INSERT INTO l_c values(9,43);
+INSERT INTO l_c values(9,44);
+INSERT INTO l_c values(9,45);
+INSERT INTO l_c values(10,46);
+INSERT INTO l_c values(10,47);
+INSERT INTO l_c values(10,48);
+INSERT INTO l_c values(10,49);
+INSERT INTO l_c values(10,50);
+INSERT INTO l_c values(11,51);
+INSERT INTO l_c values(11,52);
+INSERT INTO l_c values(11,53);
+INSERT INTO l_c values(11,54);
+INSERT INTO l_c values(11,55);
+INSERT INTO l_c values(12,56);
+INSERT INTO l_c values(12,57);
+INSERT INTO l_c values(12,58);
+INSERT INTO l_c values(12,59);
+INSERT INTO l_c values(12,60);
+INSERT INTO l_c values(13,61);
+INSERT INTO l_c values(13,62);
+INSERT INTO l_c values(13,63);
+INSERT INTO l_c values(13,64);
+INSERT INTO l_c values(13,65);
+INSERT INTO l_c values(14,66);
+INSERT INTO l_c values(14,67);
+INSERT INTO l_c values(14,68);
+INSERT INTO l_c values(14,69);
+INSERT INTO l_c values(14,70);
+INSERT INTO l_c values(15,71);
+INSERT INTO l_c values(15,72);
+INSERT INTO l_c values(15,73);
+INSERT INTO l_c values(15,74);
+INSERT INTO l_c values(15,75);                                                                       
+
+INSERT INTO clientes values(1,'Vajillas Santa Rosa','Venezuela');
+INSERT INTO clientes values(2,'Modela tu hogar','Colombia');
+INSERT INTO clientes values(3,'Vajillas Las Américas','Republica dominicana');
+INSERT INTO clientes values(4,'Tu vajilla','Venezuela');
+INSERT INTO clientes values(5,'Target','Usa');
+INSERT INTO clientes values(6,'Business People Unlimited','Colombia');
+INSERT INTO clientes values(7,'Corona','Usa');
+INSERT INTO clientes values(8,'Tybso','Colombia');
+INSERT INTO clientes values(9,'Porcelanas el ucabista','Venezuela');
+INSERT INTO clientes values(10,'CINVICRE','Venezuela');
+INSERT INTO clientes values(11,'Ofinova','Republica dominicana');
+INSERT INTO clientes values(12,'Horeco','Republica dominicana');
+
+INSERT INTO contrato values(1,'20-Jul-19',20,1);
+INSERT INTO contrato values(2,'07-Jan-19',30,3);
+INSERT INTO contrato values(3,'12-Dec-18',15,4);
+INSERT INTO contrato values(4,'24-Oct-18',40,8);
+INSERT INTO contrato values(5,'01-Mar-19',15,11);
+
+
+INSERT INTO pedido values(1,'18-Feb-19','30-Apr-19',1);
+INSERT INTO pedido values(2,'25-Jul-19','30-Sep-19',2);
+INSERT INTO pedido values(3,'07-Jun-19','16-Aug-19',3);
+INSERT INTO pedido values(4,'24-Jul-19','01-Sep-19',4);
+INSERT INTO pedido values(5,'15-Feb-19','18-Apr-19',5);
+INSERT INTO pedido values(6,'20-Feb-19','01-May-19',6);
+INSERT INTO pedido values(7,'01-Jun-19','01-Aug-19',7);
+INSERT INTO pedido values(8,'07-Jul-19','15-Sep-19',8);
+INSERT INTO pedido values(9,'15-Apr-19','30-Jun-19',9);
+INSERT INTO pedido values(10,'30-May-18','30-Jul-19',10);
+INSERT INTO pedido values(11,'07-Jan-19','15-Mar-19',11);
+INSERT INTO pedido values(12,'01-Apr-19','01-Jul-19',12);
+INSERT INTO pedido values(13,'24-Jul-19','30-Sep-19',1);
+
+
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(1,10,1,21);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(2,15,1,22);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(3,5,1,23);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(4,5,2,2);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(5,5,2,3);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(6,10,2,4);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(7,25,3,38);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(8,30,4,44);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(9,30,4,42);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(10,30,4,45);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(11,20,5,1);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(13,35,6,5);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(14,45,7,75);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(15,15,7,74);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(16,30,8,3);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(17,30,9,1);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(18,20,10,39);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(19,20,10,38);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(20,20,10,40);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(21,35,11,5);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(22,60,12,5);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(23,75,12,6);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(24,10,8,31);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(25,10,8,32);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(26,10,8,33);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(27,10,8,34);
+INSERT INTO detalle(id,cantidad,id_pedido,id_pieza) values(28,10,10,35);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(29,20,12,7);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(30,30,11,8);
+INSERT INTO detalle(id,cantidad,id_pedido,id_vajilla) values(31,35,13,9);
+
+
+INSERT INTO factura values(1,'23-Apr-19',413600, 1);
+INSERT INTO factura values(2,'11-Apr-19',204935,5);
+INSERT INTO factura values(3,'23-Apr-19',5252625,6);
+INSERT INTO factura values(4,'8-Mar-19',4464731,11);
+INSERT INTO factura values(5,'23-Jun-19',9004500,12);
+
+
+INSERT INTO organigrama(id,nombre,nivel,tipo) values(1,'Gerencia General',1,'Gerencia');
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(2,'Gerencia de Planta',2,'Gerencia',1);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(3,'Gerencia Tecnica',3,'Gerencia',2);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(4,'Almacen de Insumos',3,'Almacen',2);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(5,'Almacen de Producto Terminado',3,'Almacen',2);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(6,'Seccion Control de Calidad',4,'Seccion',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(7,'Seleccion',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(8,'Esmaltacion Decoracion',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(9,'Colado Refinado',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(10,'Yeseria',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(11,'Rotomoldeo',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(12,'Preparacion Pasta',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(13,'Hornos',4,'Departamento',3);
+INSERT INTO organigrama(id,nombre,nivel,tipo,id_org2) values(14,'Seccion de Mantenimiento',3,'Seccion',3);
+
+
+INSERT INTO empleado(idexpediente,nombre,apellido,apellido2,fechaNac,sexo,tipoSangre,titulo,cargo,salario,id_organigrama) values(1,'Antonio','Guarisco','Gutierrez','17-Oct-82','m','A+','Ingeniero quimico','Gerente',385000,1);
+INSERT INTO empleado values(2,'Ovidio','Antonio','Rodriguez','Gomez',',13-Dec-81','m','AB+','Ingeniero mecanico','Gerente',342000,2,1);
+INSERT INTO empleado values(3,'Miguel','Eduardo','Coccaro','Montserrat','05-Apr-83','m','B-','Ingeniero produccion','Gerente',325000,3,2);
+
+INSERT INTO empleado values(4,'Alanis','Andreina','Oriquen','Perez','05-Oct-97','f','B+','Bachiller','Secretaria',85200,2,2);
+INSERT INTO empleado values(5,'Abraham','Alejandro','Gudino','Gonzales','12-Dec-80','m','O-','Ingeniero industrial','Gerente',225000,4,2);
+INSERT INTO empleado values(6,'Alberto','Antonio','Ayala','Figueroa','11-Sep-82','m','AB-','Ingeniero industrial','Gerente',189050,5,2);
+
+INSERT INTO empleado values(7,'Carla','Nazareth','Marquina','Damiani','08-Jun-84','f','O-','Ingeniero industrial','Gerente',215000,6,3);
+INSERT INTO empleado values(8,'Leonardo','Raymond','Arenas','Hidalgo','01-Aug-79','m','AB+','Ingeniero industrial','Gerente',182000,14,3);
+
+INSERT INTO empleado values(9,'Alejandra','Yamileth','Jaimes','Blanco','22-Apr-90','f','O+','Geologo','Inspector',113000,6,7);
+INSERT INTO empleado values(10,'Angelo','Eduardo','Enrique','Murillo','09-Nov-93','m','AB-','Geologo','Inspector',95000,6,7);
+INSERT INTO empleado values(11,'Ana','Luisa','Caceres','De Arismendi','11-Jan-92','f','A-','Bachiller','Inspector',80000,6,7);
+INSERT INTO empleado values(12,'Ariana','Alejandra','Rodriguez','Rojas','12-May-90','f','AB-','Geologo','Inspector',125000,6,7);
+INSERT INTO empleado values(13,'Barbara','Daniela','Natera','Colmenares','25-Feb-94','f','B-','Bachiller','Inspector',79500,6,7);
+
+INSERT INTO empleado values(14,'Daniel','Antonio','Meza','De Sousa','01-Jan-77','m','B-','Ingeniero produccion','Gerente',145000,7,3);
+INSERT INTO empleado values(15,'Daniel','Antonio','Rodriguez','Rizk','05-Sep-75','m','AB-','Ingeniero quimico','Gerente',142000,8,3);
+INSERT INTO empleado values(16,'Paolo','Casxio','Guarisco','Gianetto','22-Jul-70','m','O-','Ingeniero mecanico','Gerente',160000,9,3);
+INSERT INTO empleado values(17,'Daniela','Alexandra','Mendoza','Riquelme','30-Dec-80','f','O+','Ingeniero produccion','Gerente',120000,10,3);
+INSERT INTO empleado values(18,'Gustavo','Alberto','Maestre','Enrique','21-Mar-83','m','O-','Ingeniero industrial','Gerente',132000,11,3);
+INSERT INTO empleado values(19,'Omar','Alejandro','Cordero','Enrique','12-Dec-79','m','AB-','Geologo','Gerente',105000,12,3);
+INSERT INTO empleado values(20,'Jose','Daniel','Noguera','Gutierrez','08-May-75','m','B+','Ingeniero mecanico','Gerente',133000,13,3);
+
+INSERT INTO empleado values(21,'Arianna','Isabella','Diaz','Escudero','11-Feb-93','f','AB-','Bachiller','Operaciones generales',42000,7,14);
+INSERT INTO empleado values(22,'Carlos','Francisco','Colmenares','Rodriguez','04-Jan-95','m','AB+','Bachiller','Operaciones generales',38500,7,14);
+INSERT INTO empleado values(23,'Diego','Indalecio','Mota','Delgado','01-Oct-97','m','O-','Bachiller','Operaciones generales',39000,7,14);
+INSERT INTO empleado values(24,'Eduardo','Gabriel','Alfonzo','Molina','09-Nov-96','m','AB-','Bachiller','Operaciones generales',37500,7,14);
+INSERT INTO empleado values(25,'Freddy','Jacob II','Baptista','Baptista','10-Apr-89','m','A-','Bachiller','Operaciones generales',42000,7,14);
+
+INSERT INTO empleado values(26,'Gineth','Fiorella','Zecca','Molina','30-Aug-97','f','O+','Bachiller','Operaciones generales',29500,8,15);
+INSERT INTO empleado values(27,'Glenn','Jose','Azuaje','Arteaga','22-Nov-94','m','AB-','Bachiller','Operaciones generales',31200,8,15);
+INSERT INTO empleado values(28,'Jose','Manuel','Duran','Marquez','30-May-95','m','O-','Bachiller','Operaciones generales',24300,8,15);
+INSERT INTO empleado values(29,'Jonathan','Jesus','Silva','Guerrero','08-Jul-93','m','AB-','Bachiller','Operaciones generales',33200,8,15);
+INSERT INTO empleado values(30,'Jhon','Angel','Palma','Gonzales','12-Dec-95','m','B-','Bachiller','Operaciones generales',23000,8,15);
+
+INSERT INTO empleado values(31,'Karen','Fernanda','Azuaje','Barrios','29-Jul-96','f','AB-','Bachiller','Operaciones generales',32500,9,16);
+INSERT INTO empleado values(32,'Luis','Gerardo','Carvallo','Carvajal','07-Nov-95','m','B-','Bachiller','Operaciones generales',43200,9,16);
+INSERT INTO empleado values(33,'Cesar','Augusto','Marchese','Gomez','19-Sep-96','m','B+','Bachiller','Operaciones generales',44200,9,16);
+INSERT INTO empleado values(34,'Luis','Alejandro','Moncada','Altuve','17-Dec-96','m','A+','Bachiller','Operaciones generales',41200,9,16);
+INSERT INTO empleado values(35,'Maria','Fernanda','Barrios','Leal','01-Jan-93','f','A-','Bachiller','Operaciones generales',37500,9,16);
+
+INSERT INTO empleado values(36,'Mariana','Gabriela','Hernandez','Gutierrez','06-Feb-94','f','AB-','Bachiller','Operaciones generales',31500,10,17);
+INSERT INTO empleado values(37,'Michelle','Maria','Alvarado','Morillo','12-Feb-92','f','AB+','Bachiller','Operaciones generales',29000,10,17);
+INSERT INTO empleado values(38,'Nicolle','Alejandra','Dubala','Mirabal','26-Jun-90','f','AB-','Bachiller','Operaciones generales',32600,10,17);
+INSERT INTO empleado values(39,'Omar','Fernando','Blanco','Hidalgo','16-Jan-94','m','O-','Bachiller','Operaciones generales',28500,10,17);
+INSERT INTO empleado values(40,'Jose','Rafael','Marquez','Hidalgo','26-Dec-95','m','O+','Bachiller','Operaciones generales',32000,10,17);
+
+INSERT INTO empleado values(41,'Stephanie','Sabrina','Ferreira','Gonzales','19-Jul-93','f','AB-','Bachiller','Operaciones generales',34500,11,18);
+INSERT INTO empleado values(42,'Samir','Daniel','Castro','Garcia','19-Aug-92','f','B+','Bachiller','Operaciones generales',35200,11,18);
+INSERT INTO empleado values(43,'Richard','Rafael','Pedraza','Alvarez','04-Oct-96','m','B-','Bachiller','Operaciones generales',32100,11,18);
+INSERT INTO empleado values(44,'Carlos','Rafael','Madrid','Mezones','11-May-92','m','O-','Bachiller','Operaciones generales',29450,11,18);
+INSERT INTO empleado values(45,'Oriana','Daniela','Abreu','Zambrano','02-Mar-94','f','O+','Bachiller','Operaciones generales',31400,11,18);
+
+INSERT INTO empleado values(46,'Moises','Paulino','Escudero','Morillo','15-Sep-92','m','B-','Bachiller','Operaciones generales',27500,12,19);
+INSERT INTO empleado values(47,'Tyrone','Eduardo','Gonzales','Vargas','18-Jul-90','m','B+','Bachiller','Operaciones generales',33200,12,19);
+INSERT INTO empleado values(48,'Douglas','Antonio','Delgado','Marquez','27-Feb-95','m','A-','Bachiller','Operaciones generales',32200,12,19);
+
+INSERT INTO empleado values(49,'Claudia','Andrea','Galindez','Garces','05-Sep-94','f','AB+','Bachiller','Operaciones generales',66500,13,20);
+INSERT INTO empleado values(50,'Carlos','Jose','Perez','Marquez','30-Sep-95','m','B+','Bachiller','Operaciones generales',58300,13,20);
+INSERT INTO empleado values(51,'Iker','Jose','Umerez','Duran','26-Oct-95','m','A-','Bachiller','Operaciones generales',55320,13,20);
+INSERT INTO empleado values(52,'Leonardo','Mario','Arias','Rios','18-Nov-93','m','A-','Bachiller','Operaciones generales',53400,13,20);
+INSERT INTO empleado values(53,'Patricio','Ernesto','Enrique','Alvarado','06-Jan-94','m','O-','Bachiller','Operaciones generales',62400,13,20);
+INSERT INTO empleado values(54,'Jose','Miguel','Escudero','Aponte','19-Feb-92','m','AB-','Bachiller','Operaciones generales',57400,13,20);
+INSERT INTO empleado values(55,'Sergio','Alejandro','Castro','Garcia','22-Feb-93','m','O+','Bachiller','Operaciones generales',53300,13,20);
+INSERT INTO empleado values(56,'Anthony','Franchesco','Castaño','Higuera','13-Jul-95','m','O-','Bachiller','Operaciones generales',32450,13,20);
+INSERT INTO empleado values(57,'Luis','Alfredo','Salas','Zambrano','12-Apr-92','m','A-','Bachiller','Operaciones generales',36000,13,20);
+INSERT INTO empleado values(58,'Alberto','Adriano','Ramirez','Gonzales','26-Feb-90','m','AB+','Bachiller','Operaciones generales',45200,13,20);
+
+INSERT INTO empleado values(59,'Alvaro','Daniel','Meza','Villanueva','01-Nov-95','m','B+','Bachiller','Operaciones generales',39200,13,20);
+INSERT INTO empleado values(60,'Juan','Carlos','Villanueva','Hidalgo','03-May-94','m','B-','Bachiller','Operaciones generales',38700,13,20);
+INSERT INTO empleado values(61,'Diego','Alejandro','Suarez','Alfonzo','16-Dec-93','m','O-','Bachiller','Operaciones generales',37500,13,20);
+INSERT INTO empleado values(62,'Mario','Josue','Hernandez','Casas','29-Mar-90','m','AB-','Bachiller','Operaciones generales',38290,13,20);
+INSERT INTO empleado values(63,'Douglas','Eduardo','Delgado','Rojas','27-Aug-88','m','B+','Bachiller','Operaciones generales',46500,13,20);
+INSERT INTO empleado values(64,'Frank','Fernando','Gomez','Galicia','05-Nov-89','m','A+','Bachiller','Operaciones generales',42500,13,20);
+INSERT INTO empleado values(65,'Andres','Antonio','Iniesta','Fernandez','10-Aug-86','m','O-','Bachiller','Operaciones generales',39750,13,20);
+INSERT INTO empleado values(66,'Gustavo','Adolfo','Sivira','Marquez','06-Jan-93','m','A-','Bachiller','Operaciones generales',32500,13,20);
+INSERT INTO empleado values(67,'Jean','Francisco','Duran','Arteaga','07-Jan-93','m','A+','Bachiller','Operaciones generales',32500,13,20);
+INSERT INTO empleado values(68,'Jonathan','Alfredo','De Sousa','Del Valle','15-Feb-92','m','O-','Bachiller','Operaciones generales',36000,13,20);
+INSERT INTO empleado values(69,'Leonardo','Andres','Calles','Bastidas','8-Oct-91','m','B-','Bachiller','Operaciones generales',42500,13,20);
+INSERT INTO empleado values(70,'Luis','Miguel','Guillermo','Moncada','12-Nov-89','m','A-','Bachiller','Operaciones generales',38000,13,20);
+INSERT INTO empleado values(71,'Pablo','Jose','Lopez','Abreu','04-Dec-90','m','A+','Bachiller','Operaciones generales',33200,13,20);
+INSERT INTO empleado values(72,'Omar','Rafael','Cordero','Carvajal','19-Sep-92','m','A-','Bachiller','Operaciones generales',44200,13,20);
+INSERT INTO empleado values(73,'Rafael','Jesus','Alvarez','Calderon','01-Jan-90','m','A-','Bachiller','Operaciones generales',31500,13,20);
+INSERT INTO empleado values(74,'Ricardo','Ignacio','Mota','Indalecio','20-Jul-86','m','AB-','Bachiller','Operaciones generales',35600,13,20);
+INSERT INTO empleado values(75,'Robert','Manuel','Madrid','Santolla','06-Jul-93','m','B+','Bachiller','Operaciones generales',46200,13,20);
+
+INSERT INTO empleado values(76,'Waldo','Ricardo','Hernandez','Lopez','18-Oct-89','m','A-','Bachiller','Mecanico',43300,14,8);
+INSERT INTO empleado values(77,'Pablo','Moises','Zambrano','Lopez','14-Dec-90','m','O+','Bachiller','Mecanico',39800,14,8);
+INSERT INTO empleado values(78,'Abraham','Gabriel','Torres','Garcia','15-Feb-74','m','A+','Ingeniero mecanico','Mecanico',49300,14,8);
+INSERT INTO empleado values(79,'Adriana','Agny','Mendez','Sanchez','24-Oct-82','f','O-','Bachiller','Electricista',38200,14,8);
+INSERT INTO empleado values(80,'Adrian','Alejandro','Zambrano','Aquino','30-Aug-83','m','A-','Bachiller','Electricista',35200,14,8);
+INSERT INTO empleado values(81,'Amanda','Luisa','Cristal','Adeney','08-Oct-93','f','O-','Bachiller','Mecanico',33500,14,8);
+INSERT INTO empleado values(82,'Daniel','Francisco','Oropeza','Rivas','09-Nov-92','m','AB-','Bachiller','Electricista',33500,14,8);
+
+INSERT INTO empleado values(83,'Andrea','Alejandra','Rivas','Ramirez','10-Nov-92','f','B-','Bachiller','Operaciones generales',27500,4,5);
+INSERT INTO empleado values(84,'Andreina','Alexandra','Mujica','Calzadilla','29-Sep-90','f','B+','Bachiller','Operaciones generales',26300,4,5);
+INSERT INTO empleado values(85,'Angelica','Victoria','Russo','Valdivieso','28-Nov-93','f','O-','Bachiller','Operaciones generales',23400,4,5);
+INSERT INTO empleado values(86,'Arturo','Alejandro','Tariba','Ariza','30-Oct-91','m','AB-','Bachiller','Operaciones generales',19400,5,6);
+INSERT INTO empleado values(87,'Brayan','Alejo','Quintero','Navas','2-Jan-89','m','O+','Bachiller','Operaciones generales',20000,5,6);
+INSERT INTO empleado values(88,'Anthony','Ernesto','Milano','Molina','3-May-94','m','O+','Bachiller','Operaciones generales',18500,5,6);
+INSERT INTO empleado values(89,'Carlos','Daniel','Flores','Salazar','19-Apr-92','m','O+','Bachiller','Operaciones generales',16400,5,6);
+INSERT INTO empleado values(90,'Juan','Pedro','Jaramillo','Leon','20-Jul-90','m','O-','Bachiller','Operaciones generales',23400,5,6);
+
+INSERT INTO telefono(cod,numero,id_cliente) values(58,4241234567,1);
+INSERT INTO telefono(cod,numero,id_cliente) values(57,0132592034,2);
+INSERT INTO telefono(cod,numero,id_cliente) values(829,111523052934,3);
+INSERT INTO telefono(cod,numero,id_cliente) values(58,2125828949,4);
+INSERT INTO telefono(cod,numero,id_cliente) values(011,439952329523,5);
+INSERT INTO telefono(cod,numero,id_cliente) values(57,0135953042,6);
+INSERT INTO telefono(cod,numero,id_cliente) values(011,502045923424,7);
+INSERT INTO telefono(cod,numero,id_cliente) values(57,0122592845,8);
+INSERT INTO telefono(cod,numero,id_cliente) values(58,2125943305,9);
+INSERT INTO telefono(cod,numero,id_cliente) values(58,4129499402,10);
+INSERT INTO telefono(cod,numero,id_cliente) values(829,429529529426,11);
+INSERT INTO telefono(cod,numero,id_cliente) values(829,539953052942,12);
+
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4242892850,1);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4249549530,2);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4249590343,3);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,2124952055,4);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4129593053,5);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4125998293,6);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,2129590304,7);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4149590035,8);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4142124590,9);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4169993042,10);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4168882394,11);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4161144235,12);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4149299534,13);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,2125549354,14);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4142848893,15);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4244355969,16);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4249995983,17);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4122122156,18);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,4245534256,19);
+INSERT INTO telefono(cod,numero,id_empleado) values(58,2124439661,20);
+
+
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(1,'24-Jan-19',10000,'Hora extra',1,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(2,'24-Jan-19',10000,'Hora extra',2,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(3,'24-Jan-19',10000,'Hora extra',3,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(4,'23-May-18',5000,'Amonestaciones',5,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado) values(5,'28-Dec-18',12000,'Bono mes',3);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(6,'04-Feb-19',5000,'Amonestaciones',28,2);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(7,'15-Jan-19',10000,'Amonestaciones',32,4);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,retrasos) values(8,'07-Jan-19',2500,'Amonestaciones',49,1);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(9,'15-Jun-19',15000,'Hora extra',55,3);
+INSERT INTO detalle_exp(id,fechaInicio,monto,motivo,id_empleado,totalHrsExtraDia) values(10,'13-May-19',10000,'Hora extra',52,2);
+
+INSERT INTO salud_alergias values(1,'Alergia Estacional','Alergia','Alergias causadas por alérgenos de exteriores como el polen.');
+INSERT INTO salud_alergias values(2,'Alergias de Interior','Alergia','Las alergias de interior son desencadenadas por cosas como los ácaros del polvo que prosperan en entornos templados y húmedos.');
+INSERT INTO salud_alergias values(3,'Alergias a las Mascotas','Alergia','En realidad, las alergias a las mascotas no son una reacción al pelo de su mascota, sino a las proteínas de las células cutáneas del animal.');
+INSERT INTO salud_alergias values(4,'Alergias Alimentarias','Alergia','Las reacciones adversas ante una alergia alimentaria se producen de forma muy clara, definida e inmediata. Ocurren por intoxicacion al ingerir un alimento');
+INSERT INTO salud_alergias values(5,'Alergias al Polen','Alergia','Ocurre a la exposicion de climas o espacios abiertos');
+
+INSERT INTO e_sa values(4,1);
+INSERT INTO e_sa values(9,3);
+INSERT INTO e_sa values(10,3);
+INSERT INTO e_sa values(16,2);
+INSERT INTO e_sa values(24,5);
+INSERT INTO e_sa values(29,4);
+INSERT INTO e_sa values(32,1);
+INSERT INTO e_sa values(36,2);
+INSERT INTO e_sa values(38,3);
+INSERT INTO e_sa values(49,5);
+INSERT INTO e_sa values(50,1);
+INSERT INTO e_sa values(55,4);
+INSERT INTO e_sa values(63,2);
+INSERT INTO e_sa values(65,1);
+INSERT INTO e_sa values(66,5);
+INSERT INTO e_sa values(69,2);
+
+INSERT INTO hist_turno_men values('7-Jan-19',3,49,'8-Jan-19');
+INSERT INTO hist_turno_men values('1-Feb-19',3,50,'02-Feb-19');
+INSERT INTO hist_turno_men values('1-Jul-19',2,59,'8-Jul-19');
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('24-Jun-19',1,62);
+INSERT INTO hist_turno_men values('7-May-19',1,66,'14-May-19');
+INSERT INTO hist_turno_men values('01-Apr-19',3,69,'02-Apr-19');
+INSERT INTO hist_turno_men values('02-Apr-19',3,70,'03-Apr-19');
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('22-Jun-19',2,71);
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('31-May-19',1,74);
+INSERT INTO hist_turno_men(fechaInicio,turno,id_empleado) values('03-Jun-19',2,75);
+
+INSERT INTO reunion values(1,'31-May-19','Consideramos subir la seleccion en un 10% la siguiente semana',14);
+INSERT INTO reunion values(2,'07-Jun-19','Aumento de productividad en Esmaltado',15);
+INSERT INTO reunion values(3,'14,Jun,19','Aumentar la productividad a un 10%',16);
+INSERT INTO reunion values(4,'21-Jun-19','Resolver Problemas con las maquinas',20);
+INSERT INTO reunion values(5,'21-Jun-19','Mantenimiento de productividad',18);
+
+INSERT INTO inasistencia_reunion values(55,4,'21-Jun-19',20);
+INSERT INTO inasistencia_reunion values(63,5,'21-Jun-19',18);
+
